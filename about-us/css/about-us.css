@@ -56,7 +56,6 @@ img.displayed {
 
 #actual-nav {
   color: #ff19ff;
-  text-decoration: none;
 }
 /* försvinner, går att få fram genom att flytta id till en annan plats i .html */
 
