@@ -13,7 +13,7 @@ Kommunicera alla svårigheter, dela med dig av framgångar.
 - 17 Dec - 10:00 Meeting in the group. 
 - 20 Dec - Lecture
 - 21 Dec - Lecture
-- 22 Dec - 10:00 Meeting in the group.
+- 22 Dec - 10:00 Meeting in the group. - We decided what kind of project and who makes what! 
 - Break
 - 27 Dec - Lecture
 - 28 Dec - 
@@ -31,6 +31,21 @@ Kommunicera alla svårigheter, dela med dig av framgångar.
 - 12 Jan -
 - 13 Jan - Lecture
 - 14 Jan - Deadline
+
+General idea. 
+
+We will have one index/style.css that gives us the main rulesset for the fonts, sizes, colours and such. 
+We can make the first page with the intro together, then we pick one of the other four each to work with. 
+
+Example project
+- 1. Welcome site - 4 students from EC - All of us
+- 2. Contact site, how to get in touch with each student - Johan
+- 3. Example of what kind of service we can do to customers - Jahirul
+- 4. Short info about each person, who we are and what we like - Jon
+- 5. History blog of what we done during school and maby earlier - Joakim
+
+
+
 
 
 # Delar som skall vara med. 
