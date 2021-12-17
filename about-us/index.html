@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
   </head>
   <body>
     <div class="top-container">
@@ -14,7 +15,7 @@
       <a href="../index.html">Home</a>
       <a href="../contacts/index.html">Contacts</a>
       <a href="../products/index.html">Products</a>
-      <a href="index.html">About us</a>
+      <a href="index.html" id="actual-nav">About us</a>
       <a href="../blog/index.html">Blog</a>
     </div>
 
@@ -24,23 +25,21 @@
         The header will stick to the top when you reach its scroll position.
       </p>
       <p>Scroll back up to remove the sticky effect.</p>
-      <p>
-        AboutUS
-      </p>
+      <p>AboutUS</p>
     </div>
     <script>
       window.onscroll = function () {
-        myFunction()
-      }
+        myFunction();
+      };
 
-      var header = document.getElementById('myHeader')
-      var sticky = header.offsetTop
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
 
       function myFunction() {
         if (window.pageYOffset > sticky) {
-          header.classList.add('sticky')
+          header.classList.add("sticky");
         } else {
-          header.classList.remove('sticky')
+          header.classList.remove("sticky");
         }
       }
     </script>
