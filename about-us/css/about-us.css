@@ -1,8 +1,13 @@
 html {
   font-size: 16px;
+  margin: 10px; /* Annorlunda än Global*/
+  padding: 10px; /* Annorlunda än Global*/
+  border: 2px;
+  border-style: solid, #1e1842;
 }
 h3 {
   color: #f1f1f1;
+  border: none; /* None tar bort tidigare CSS*/
 }
 
 p {
@@ -13,12 +18,30 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #1e1842;
+  min-height: 100px;
 }
 
 img.displayed {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.background-image {
+  background-image: url("/about-us/img/pexels-nathan-cowley-1300402.jpg");
+  background-image: url("/img/Kaanae-Beach-1024x512.jpg");
+  background-size: cover;
+  background-position: 60% 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.name {
+  color: #e22424;
+}
+
+.aboutUsText {
+  padding: 20px;
 }
 
 .top-container {
@@ -57,7 +80,7 @@ img.displayed {
 #actual-nav {
   color: #ff19ff;
 }
-/* försvinner, går att få fram genom att flytta id till en annan plats i .html */
+/* försvinner, går att få fram genom att flytta id till en annan plats i .html*/
 
 a {
   text-decoration: none;
@@ -70,7 +93,7 @@ a:hover {
 }
 
 /* Adding transform-style CSS
-    property to the boxes */
+    property to the boxes
 .box {
   margin: 0;
   padding: 0;
@@ -80,8 +103,8 @@ a:hover {
   align-items: center;
   /*   min-height: 100vh;
  */
-  /*   background: #000;
- */
+/*   background: #000;
+ 
   position: relative;
   width: 800px;
   height: 100px;
@@ -89,7 +112,7 @@ a:hover {
   animation: animate 30s linear infinite;
 }
 
-/* Adding keyframes for animation */
+/* Adding keyframes for animation 
 @keyframes animate {
   0% {
     transform: perspective(10000px) rotateY(0deg);
@@ -100,7 +123,7 @@ a:hover {
 }
 
 /* Adding CSS to all the span
-        tags for animation */
+        tags for animation
 .box span {
   position: absolute;
   top: 0;
@@ -114,7 +137,7 @@ a:hover {
     linear-gradient(transparent, transparent, #0004);
 }
 
-/* Adding object-fit CSS property to all the images */
+/* Adding object-fit CSS property to all the images
 .box span img {
   position: absolute;
   top: 0;
@@ -122,4 +145,4 @@ a:hover {
   height: 350px;
   width: 300px;
   object-fit: cover;
-}
+}*/
