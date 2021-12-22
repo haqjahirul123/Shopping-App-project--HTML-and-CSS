@@ -22,6 +22,14 @@
     <link rel="icon" type="image/fav-icon" href="/img/favicon.png" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="css/about-us.css" />
+
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 
   <body>
@@ -59,21 +67,21 @@
       </span>
     </div>-->
 
-    <div class="aboutUsText">
+    <!--     <div class="aboutUsText">
       <h3>Lead Tech</h3>
       <h3 id="name">Johan</h3>
       är en erfaren systemsutvecklare på jakt efter en ny spännande utmaning,
       <br />är jag får användning av mina professionella färdigheter och sociala
       egenskaper för att föra verksamheten framåt.
     </div>
-    <script>
+    -->    
+ 
+    <script>/*  Detta skript är nav-bar i toppen */
       window.onscroll = function () {
         myFunction();
       };
-
       var header = document.getElementById("myHeader");
       var sticky = header.offsetTop;
-
       function myFunction() {
         if (window.pageYOffset > sticky) {
           header.classList.add("sticky");
@@ -82,5 +90,96 @@
         }
       }
     </script>
+    
+    <!--Här börjar bootstrapen-->
+    <div class="wrapper">
+      <h1>This is our Superb Crew of ex-Google TechLeads</h1>
+      <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div
+              class="front"
+              style="background-image: url(/about-us/img/pexels-andrea-piacquadio-834863.jpg);"
+            >
+              <div class="inner">
+                <p>Johan Fahlgren </p>
+                <span>Backend programmerare</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                 Johan är en erfaren systemsutvecklare på jakt efter en ny spännande utmaning,
+      där han får användning av sina professionella färdigheter och sociala
+      egenskaper för att föra verksamheten framåt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="url(https://unsplash.it/511/511/)">
+              <div class="inner">
+                <p>Rocogged</p>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div
+              class="front"
+              style="background-image: url(https://unsplash.it/502/502/)"
+            >
+              <div class="inner">
+                <p>Strizzes</p>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div
+              class="front"
+              style="background-image: url(https://unsplash.it/503/503/)"
+            >
+              <div class="inner">
+                <p>Clossyo</p>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Alias cum repellat velit quae suscipit c.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--Här slutar bootstrapen-->
   </body>
 </html>
