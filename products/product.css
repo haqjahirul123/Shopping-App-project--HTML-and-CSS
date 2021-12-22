@@ -3,7 +3,7 @@
 :root{
     --white-light: rgba(255, 255, 255, 0.5);
     --alice-blue: #f8f9fa;
-    --carribean-pink: #f1b3ec;
+    --carribean-pink: #ff9b00;
     --gray: #ededed;
 }
 *{
@@ -15,7 +15,7 @@
     font-family: 'Quicksand', sans-serif;
 } */
 
-.header {
+/* .header {
     padding-bottom: 20px;
     padding-top: 20px;
     width: auto;
@@ -30,13 +30,11 @@
     color: #f1f1f1;
     text-align: center;
     border-bottom: 1px solid #f1f1f1;
-  }
+  } */
 
 /* Utility stylings */
-img{
+.imageItem{
     width:100%;
- 
-
     display: block;
 }
 /* .container{
