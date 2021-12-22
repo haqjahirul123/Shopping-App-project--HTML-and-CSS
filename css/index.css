@@ -6,14 +6,25 @@ body {
 
 img.displayed {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 55%;
+  min-width: 300px;
+  margin: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.top-logo {
+  box-shadow: 0 0 20px 10px #f1f1f1;
+  border-radius: 6px;
+  background-size: cover;
+  max-width: 30%;
 }
 
 .top-container {
-  background-color: #00f0ccce;
+  background-color: #709e97be;
   padding: 30px;
   text-align: center;
+  background-image: linear-gradient(to right, #394e4bbe, #42887dbe);
 }
 
 .header {
@@ -47,7 +58,7 @@ img.displayed {
 a {
   text-decoration: none;
   color: #f1f1f1;
-  margin-left: 25px;
+  margin-left: 12px;
 }
 
 a:hover {
