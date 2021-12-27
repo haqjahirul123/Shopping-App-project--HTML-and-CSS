@@ -164,8 +164,8 @@ h1 {
 
 p {
   /* EGEN */
-  padding-top: 60px; /*  flyttar ner texten i rutorna lite */
-  padding-bottom: -60px; /* ändrar ingenting  */
+  padding-top: 10px; /*  flyttar ner texten i rutorna lite */
+  padding-bottom: 0px; /* ändrar ingenting  */
 }
 
 .back {
@@ -255,6 +255,11 @@ p {
   font-size: 2rem;
   margin-bottom: 2rem;
   position: relative;
+}
+
+.back a {
+  /* egen text*/
+  color: #e22424;
 }
 
 .front .inner p:after {
