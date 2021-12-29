@@ -22,26 +22,25 @@ li {
 .container {
   background-color: crimson;
   display: flex;
+  flex-direction: column;
   /* height: 600px; */
-  /* flex-flow: row wrap; */
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .container ul {
   background-color: darkgreen;
   display: flex;
   /* justify-content: flex-end; */
-  flex-direction: row;
-  align-items: center;
-}
-
-.container li:nth-child(even) {
-  flex-direction: column-reverse;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .employee {
+  border: 100px black; /* syns inte i någon class*/
   /* width: 100px; */
-  height: 600px;
+  height: 150px;
   /*margin: auto; /* förstör .container justify-content*/
   /* border-bottom: 50px; */
   /* order: 3; */
