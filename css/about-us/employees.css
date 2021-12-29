@@ -1,0 +1,48 @@
+body {
+  background: #efefef;
+}
+
+li {
+  background-color: blueviolet;
+  list-style-type: none;
+  /* padding-left: 40px; */
+}
+
+/* .container1 { */
+/* display: flex; */
+/* gap: 50px; skapar mellanrum, men fungerar inte med justify-content */
+/* flex-direction: row; */
+/* flex-wrap: wrap; */
+/* align-items: baseline; placerare längst ner i containern */
+/* align-content: space-between; */
+/*   justify-content: space-evenly;*/
+/* background-color: gray; */
+/* } */
+
+.container {
+  background-color: crimson;
+  display: flex;
+  /* height: 600px; */
+  /* flex-flow: row wrap; */
+  justify-content: space-evenly;
+}
+
+.container ul {
+  background-color: darkgreen;
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-direction: row;
+  align-items: center;
+}
+
+.container li:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+.employee {
+  /* width: 100px; */
+  height: 600px;
+  /*margin: auto; /* förstör .container justify-content*/
+  /* border-bottom: 50px; */
+  /* order: 3; */
+}
