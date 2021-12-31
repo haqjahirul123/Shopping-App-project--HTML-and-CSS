@@ -1,4 +1,6 @@
 html {
+  width: 100%; /* behövs för att fylla ut hela webbläsaren */
+  height: 100%;
   font-size: 16px;
   margin: 10px; /* Annorlunda än Global*/
   padding: 10px; /* Annorlunda än Global*/
@@ -7,84 +9,15 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #1e1842;
   min-height: 100px;
 }
 
-h3 {
-  color: #f1f1f1;
-  border: none; /* None tar bort tidigare CSS*/
-}
-
-p {
-  color: #f1f1f1;
-}
-
-a {
-  text-decoration: none;
-  color: #f1f1f1;
-  margin-left: 25px;
-}
-
-a:hover {
-  color: #e22424;
-}
-
-img.displayed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* .background-image {
-  background-image: url("/about-us/img/pexels-nathan-cowley-1300402.jpg");
-  background-size: cover;
-  background-position: 60% 30%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
- */
 .name {
   color: #e22424;
 }
 
 .aboutUsText {
   padding: 20px;
-}
-
-.top-container {
-  background-color: #00f0ccce;
-  padding: 30px;
-  text-align: center;
-}
-
-.header {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  background-color: #555;
-  background-image: linear-gradient(
-    to right,
-    rgb(59, 59, 59, 2),
-    rgb(99, 99, 99, 2)
-  );
-  text-align: center;
-  border-bottom: 1px solid #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
 }
 
 #actual-nav {
