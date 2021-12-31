@@ -1,0 +1,41 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #efefef;
+}
+
+li {
+  background-color: blueviolet;
+  list-style-type: none;
+  /* padding-left: 40px; */
+}
+
+img {
+  height: 150px;
+}
+
+.employee {
+  grid-column-start: 3; /* TODO griden fungerar i annan fil, men här störs den av något */
+  grid-column-end: 4;
+
+  border: 100px black; /* syns inte i någon class*/
+  /* width: 100px; */
+  height: 150px;
+  /*margin: auto; /* förstör .container justify-content*/
+  /* border-bottom: 50px; */
+  /* order: 3; */
+}
+
+.main-layout-grid {
+  display: grid;
+}
+
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
