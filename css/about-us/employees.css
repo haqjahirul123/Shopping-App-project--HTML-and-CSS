@@ -1,28 +1,58 @@
-html li {
-  background-color: rgba(137, 43, 226, 0.247);
-  list-style-type: none; /* tar bort punkterna */
-  /* padding-left: 40px; */
+body {
+  margin: 0;
 }
 
 p {
   color: black;
 }
 
-h1 {
-  background-color: blue; /* övningstekniskt */
+/* h1 {
+  background-color: blue; /* övningstekniskt 
   display: grid;
-}
+} */
 
+/* grid start */
 .main-layout-grid {
-  /* skapar grid för hela artikeln */
   background-color: blanchedalmond;
   display: grid;
-  min-height: 100%;
-  grid-template-rows: repeat(4, 25%);
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  grid-template-areas:
+    "headpicture header aside"
+    "headpicture text aside";
 }
 
-.a-header {
+.headpicture {
+  background-color: chocolate;
+  grid-area: headpicture;
+}
+
+.header {
+  background-color: chartreuse;
+  grid-area: header;
+}
+
+.aside {
+  background-color: cyan;
+  list-style-type: none; /* tar bort punkterna */
+  grid-area: aside;
+}
+
+.text {
+  background-color: darkolivegreen;
+  grid-area: text;
+}
+/* grid slut */
+
+/* flex */
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .a-header {
   display: grid;
   grid-column-start: 2;
 }
@@ -40,20 +70,20 @@ h1 {
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 4;
-}
+} */
 
-.d-employee {
-  /* placerar de 3 icke-aktuella employees */
+/* .d-employee {
+  /* placerar de 3 icke-aktuella employees 
   display: grid;
-  grid-column-start: 4;
+  grid-column-start: 4; */
 
-  /* border: 100px black; syns inte i någon class */
-  /* width: 100px; */
-  /*margin: auto; /* förstör .container justify-content*/
-  /* border-bottom: 50px; */
-  /* order: 3; */
-}
+/* border: 100px black; syns inte i någon class */
+/* width: 100px; */
+/*margin: auto; /* förstör .container justify-content*/
+/* border-bottom: 50px; */
+/* order: 3; */
+/* } */
 
-.d-employee img {
+.aside img {
   height: 150px;
 }
