@@ -11,32 +11,30 @@ p {
 h1 {
   background-color: blue; /* övningstekniskt */
   display: grid;
-  line-height: 0;
 }
 
 .main-layout-grid {
   /* skapar grid för hela artikeln */
-  display: grid;
   background-color: blanchedalmond;
+  display: grid;
   min-height: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: repeat(4, 25%);
 }
 
 .a-header {
   display: grid;
   grid-column-start: 2;
-  text-align: center;
 }
 
 .b-head-picture {
   display: grid;
   grid-row-start: 1;
   grid-column-start: 1;
-  justify-items: end;
 }
 
 .c-text {
+  background-color: chocolate;
   display: grid;
   grid-row-start: 2;
   grid-row-end: 4;
