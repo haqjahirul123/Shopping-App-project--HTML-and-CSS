@@ -2,23 +2,23 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="blog.css" />
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
       rel="stylesheet"
       id="bootstrap-css"
     />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="blog.css" />
+
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <div class="top-container">
-      <img src="../img/logo.png" alt="logo" width="350px" />
+      <img class="top-logo" src="../img/logo.png" alt="logo" width="350px" />
     </div>
 
     <div class="header" id="myHeader">
-      <h2>Navigation</h2>
       <a href="../index.html">Home</a>
       <a href="../contacts/index.html">Contacts</a>
       <a href="../products/index.html">Products</a>
@@ -27,35 +27,46 @@
     </div>
 
     <div class="blog-heading">
-      Blog
+      <a href="html-css.html" class="btn-card">Previous</a>
+      <a href="index.html" class="btn-card">Blog</a>
+      <a href="sql.html" class="btn-card">Next</a>
     </div>
 
-    <!-- details card section starts from here -->
-    <section class="details-card">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card-content">
-              <div class="card-img">
-                <img src="../img/c.png" alt="" />
-                <span><h4>16 aug</h4></span>
-              </div>
-              <div class="card-desc">
-                <h3>C#</h3>
-                <p>
-                  Here you can read about our first C# experience
-                </p>
-                <a href="c-sharp.html" class="btn-card">Read</a>
-              </div>
-            </div>
+    <section class="blog-window">
+      <div class="blog-title">C-sharp - 16 Aug</div>
+      <br />
+      <div class="blog-container">
+        <div class="blog-texts">
+          <div class="blog-lines">
+            The pain itself is a lot of pain He hates his services, he hates to
+            fall into any kind of situation, no one will pardon him, but he can
+            easily be countered by their flattery, at the most enduring ones. By
+            choosing, they abandon the fact that pleasures fall upon the sage,
+            and that no annoyance must be rejected by those who praise him, and
+            that pain follows him. That is just, we can enjoy pleasure. The key
+            to the accusers is the pain-free pain you encounter when some accuse
+            you. Pain is caused by the present or the things they are not aware
+            of. The pains of toil, and the pain arising from it, the troubles of
+            pleasure abandon the whole of pleasure, and receive them at fault?
+            We consider the needs of the architect the most because they are not
+            aware of it. Some of us drive back the pain of our pleasures, so
+            that the harsher choices that fall into the pleasure of taking on
+            others, being corrupted by those whom no one else has ever done, and
+            that he will find fault with himself!
           </div>
-         </div>
+        </div>
+        <div class="blog-img">
+          <img src="img/Csharp.jpg" />
+          <img src="img/Csharp.jpg" />
+          <img src="img/Csharp.jpg" />
+          <img src="img/Csharp.jpg" />
+          <img src="img/Csharp.jpg" />
+          <img src="img/Csharp.jpg" />
+        </div>
       </div>
     </section>
 
-
-
-
+    <script>
       window.onscroll = function () {
         myFunction()
       }
