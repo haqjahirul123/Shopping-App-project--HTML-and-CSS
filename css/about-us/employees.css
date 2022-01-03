@@ -1,16 +1,33 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-}
-
 p {
   color: black;
 }
 
+@media (max-width: 599px) {
+  p {
+    color: red;
+  }
+}
+
 h1 {
   background-color: blue;
-  font-size: 4rem;
+  font-size: 3rem;
   color: black;
+  min-width: 10%;
+  text-align: left;
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 150%;
+  }
+}
+
+article {
+  background-color: greenyellow;
+  padding: 0px 10% 10%;
+  min-width: 300px;
+  max-width: 1400px;
 }
 
 .headpicture {
@@ -25,16 +42,25 @@ h1 {
   width: 90%;
 }
 
-/* grid start */
+/* grid Start */
 .main-layout-grid {
+  padding: 5px;
   background-color: blanchedalmond;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 2fr 1fr;
-      grid-template-columns: 2fr 2fr 1fr;
+  -ms-grid-columns: 1.3fr 2fr 1fr;
+      grid-template-columns: 1.3fr 2fr 1fr;
   -ms-grid-rows: 0.5fr 3fr;
       grid-template-rows: 0.5fr 3fr;
-      grid-template-areas: "headpicture name aside" "headpicture text aside";
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+      grid-template-areas: "headpicture article aside" "headpicture article aside";
+}
+
+@media (max-width: 599px) {
+  .main-layout-grid {
+        grid-template-areas: "headpicture article" "headpicture article";
+  }
 }
 
 .main-layout-grid .headpicture {
@@ -43,18 +69,18 @@ h1 {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: headpicture;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: flex-end;
 }
 
-.main-layout-grid .name {
-  background-color: chartreuse;
+.main-layout-grid article {
+  background-color: greenyellow;
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
-  grid-area: name;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  grid-area: article;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .main-layout-grid .aside {
@@ -65,15 +91,11 @@ h1 {
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: aside;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-.main-layout-grid .text {
-  background-color: darkolivegreen;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: text;
-}
-
+/* grid End */
 /* flex */
 .aside {
   display: -webkit-box;
@@ -83,47 +105,30 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 1rem;
-  margin: auto;
+  margin: 0;
+}
+
+@media (max-width: 599px) {
+  .aside {
+    display: none;
+    /* tar bort Aside vid liten skärm */
+  }
 }
 
 .aside img {
-  height: 150px;
+  max-width: 70%;
+  max-height: 200px;
 }
 
-/* .a-header {
-  display: grid;
-  grid-column-start: 2;
+/* Bootstrap Card css ändrad */
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.125);
 }
-
-.b-head-picture {
-  display: grid;
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
-
-.c-text {
-  background-color: chocolate;
-  display: grid;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 4;
-} */
-/* .d-employee {
-  /* placerar de 3 icke-aktuella employees 
-  display: grid;
-  grid-column-start: 4; */
-/* border: 100px black; syns inte i någon class */
-/* width: 100px; */
-/*margin: auto; /* förstör .container justify-content*/
-/* border-bottom: 50px; */
-/* order: 3; */
-/* } */
 /*# sourceMappingURL=employees.css.map */
