@@ -135,24 +135,26 @@
           </button>
         </div>
       </div>
+    </footer>
 
-      <div class="popup" id="popup-1">
-        <div class="overlay">
-          <div class="popup-content">
-            <div class="close-btn" onclick="subscribe_btn()">&times;</div>
-            <h4>Subscribe to our newsletter</h4>
-            <form action="/action_page.php">
+    <div class="popup" id="popup-1">
+      <div class="overlay">
+        <div class="popup-content">
+          <div class="close-btn" onclick="subscribe_btn()">&times;</div>
+          <h4>Subscribe to our newsletter</h4>
+          <div class="email-input">
+            <form action="">
               <label for="email" aria-placeholder="Enter your email address"
                 >Email:</label
               >
               <input type="email" id="email" name="email" />
               <input type="submit" />
             </form>
-            <p>We will not spam you &#128521;</p>
           </div>
+          <p>We will not spam you &#128521;</p>
         </div>
       </div>
-    </footer>
+    </div>
 
     <script>
       window.onscroll = function () {
