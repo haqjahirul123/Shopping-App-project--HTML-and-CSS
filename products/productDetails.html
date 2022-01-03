@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="productDetails.css" crossorigin="anonymous" />
     
     <title>Document</title>
@@ -16,7 +17,7 @@
 <div class="container">
     
     <!-- product -->
-    <div class="product-content product-wrap clearfix product-deatil">
+    <div class="container product-wrap clearfix productdetails">
         <div class="row">
             <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="product-image">
@@ -40,8 +41,8 @@
                                 <img src="https://i.ibb.co/fn2Kpnf/Png-Item-3612161.png" class="img-responsive imagePosition" alt="" border="0">
                             </div>
                         </div>
-                        <a class="left carousel-control" href="#myCarousel-2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-                        <a class="right carousel-control" href="#myCarousel-2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                        <div class="left carousel-control" href="#myCarousel-2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </div>
+                        <div class="right carousel-control" href="#myCarousel-2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </div>
                     </div>
                 </div>
             </div>
@@ -49,39 +50,41 @@
             <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
                 <h2 class="name">
                     Angular for Frontend 
-                    <small>Product by <a href="javascript:void(0);">Google</a></small>
-                    <i class="fa fa-star fa-2x text-primary"></i>
-                    <i class="fa fa-star fa-2x text-primary"></i>
-                    <i class="fa fa-star fa-2x text-primary"></i>
-                    <i class="fa fa-star fa-2x text-primary"></i>
-                    <i class="fa fa-star fa-2x text-muted"></i>
-                    <span class="fa fa-2x"><h5>(109) Votes</h5></span>
-                    <a href="javascript:void(0);">109 customer reviews</a>
+                    <small>Product by <a href="">Google</a></small>
                 </h2>
+                        <i class="fa fa-star fa-2x  rating"></i>
+                        <i class="fa fa-star fa-2x  rating"></i>
+                        <i class="fa fa-star fa-2x  rating"></i>
+                        <i class="fa fa-star fa-2x text-muted "></i>
+                        <i class="fa fa-star fa-2x text-muted "></i>  
+                   
+                    <span class="fa fa-2x"><h6>(118) Votes</h6></span>
+                    <a href="">137 customer reviews</a>
+                
                 <hr />
-                <h3 class="price-container">
+                <h4>
                     $129.54
                     <small>*includes tax</small>
-                </h3>
+                </h4>
                 <div class="certified">
                     <ul>
                         <li>
-                            <a href="javascript:void(0);">Delivery time<span>7 Working Days</span></a>
+                            <a href="">Delivery time<span>3 Working Days</span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">Certified<span>Quality Assured</span></a>
+                            <a href="">Certified<span>Quality Assured</span></a>
                         </li>
                     </ul>
                 </div>
                 <hr />
                 <div class="description description-tabs">
                     <ul id="myTab" class="nav nav-pills">
-                        <li class="active"><a href="#more-information" data-toggle="tab" class="no-margin">Product Description </a></li>
-                        <li class=""><a href="#specifications" data-toggle="tab">Specifications</a></li>
-                        <li class=""><a href="#reviews" data-toggle="tab">Reviews</a></li>
+                        <li class="active"><a href="#productdescription" data-toggle="tab" class="no-margin">Product Description </a></li>
+                        <li class=""><a href="#technicalspecifications" data-toggle="tab">Technical Specifications</a></li>
+                        <li class=""><a href="#customersreviews" data-toggle="tab">Customer Reviews</a></li>
                     </ul>
-                    <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane fade active in" id="more-information">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="productdescription">
                             <br />
                             <strong>Description </strong>
                             <p>
@@ -89,29 +92,18 @@
                                 Angular is used as the frontend of the MEAN stack, consisting of MongoDB database, Express.js web application server framework, Angular itself (or AngularJS), and Node.js server runtime environment.
                             </p>
                         </div>
-                        <div class="tab-pane fade" id="specifications">
+                        <div class="tab-pane fade" id="technicalspecifications">
+                            <strong>Technical specifications</strong>
                             <p>
                                 The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components that are organized into NgModules. NgModules collect related code into functional sets; an Angular application is defined by a set of NgModules. An application always has at least a root module that enables bootstrapping, and typically has many more feature modules.
                             </p>
                         </div>
                             <br />
                           
-                        <div class="tab-pane fade" id="reviews">
-                            <br />
-                            <form method="post" class="well padding-bottom-10" onsubmit="return false;">
-                                <textarea rows="2" class="form-control" placeholder="Write a review"></textarea>
-                                <div class="margin-top-10">
-                                    <button type="submit" class="btn btn-sm btn-primary pull-right">
-                                        Submit Review
-                                    </button>
-                                    <div href="javascript:void(0);" class="btn btn-link profile-link-btn" rel="tooltip" data-placement="bottom" title="" data-original-title="Add Location"><i class="fa fa-location-arrow"></i></a>
-                                    <div href="javascript:void(0);" class="btn btn-link profile-link-btn" rel="tooltip" data-placement="bottom" title="" data-original-title="Add Voice"><i class="fa fa-microphone"></i></a>
-                                    <div href="javascript:void(0);" class="btn btn-link profile-link-btn" rel="tooltip" data-placement="bottom" title="" data-original-title="Add Photo"><i class="fa fa-camera"></i></a>
-                                    <dv href="javascript:void(0);" class="btn btn-link profile-link-btn" rel="tooltip" data-placement="bottom" title="" data-original-title="Add File"><i class="fa fa-file"></i></a>
-                                </div>
-                            </form>
-
-                           
+                        <div class="tab-pane fade" id="customersreviews">
+                            <p>
+                                The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components that are organized into NgModules. NgModules collect related code into functional sets; an Angular application is defined by a set of NgModules. An application always has at least a root module that enables bootstrapping, and typically has many more feature modules.
+                            </p> 
                         </div>
                     
                 </div>
@@ -120,6 +112,9 @@
             </div>
         </div>
     </div>
+    <a href="/" type = "button" class = " btn-primary btn-cart"> Go Home
+        <span><i class="fas fa-house-damage"></i></span>
+    </a>
     <!-- end product -->
 </div>
 
