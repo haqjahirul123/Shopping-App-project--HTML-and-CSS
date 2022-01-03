@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+p {
+  color: black;
+}
+
+h1 {
+  background-color: blue;
+  font-size: 4rem;
+  color: black;
+}
+
+.headpicture {
+  width: 100%;
+  min-width: 150px;
+  max-width: fit-content;
+}
+
+.aside {
+  width: 90%;
+}
+
+/* grid start */
+.main-layout-grid {
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  grid-template-areas:
+    "headpicture name aside"
+    "headpicture text aside";
+
+  .headpicture {
+    background-color: chocolate;
+    grid-area: headpicture;
+    justify-self: end;
+  }
+
+  .name {
+    background-color: chartreuse;
+    grid-area: name;
+    align-self: end;
+  }
+
+  .aside {
+    background-color: cyan;
+    list-style-type: none; /* tar bort punkterna */
+    grid-area: aside;
+  }
+
+  .text {
+    background-color: darkolivegreen;
+    grid-area: text;
+  }
+}
+
+/* flex */
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: center;
+  font-size: 1rem;
+  margin: auto;
+
+  img {
+    height: 150px;
+  }
+}
+
+/* .a-header {
+  display: grid;
+  grid-column-start: 2;
+}
+
+.b-head-picture {
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.c-text {
+  background-color: chocolate;
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+} */
+
+/* .d-employee {
+  /* placerar de 3 icke-aktuella employees 
+  display: grid;
+  grid-column-start: 4; */
+
+/* border: 100px black; syns inte i någon class */
+/* width: 100px; */
+/*margin: auto; /* förstör .container justify-content*/
+/* border-bottom: 50px; */
+/* order: 3; */
+/* } */

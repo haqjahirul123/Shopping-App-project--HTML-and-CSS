@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -6,50 +7,94 @@ p {
   color: black;
 }
 
-/* h1 {
-  background-color: blue; /* övningstekniskt 
-  display: grid;
-} */
+h1 {
+  background-color: blue;
+  font-size: 4rem;
+  color: black;
+}
+
+.headpicture {
+  width: 100%;
+  min-width: 150px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.aside {
+  width: 90%;
+}
 
 /* grid start */
 .main-layout-grid {
   background-color: blanchedalmond;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 0.5fr 3fr;
-  grid-template-areas:
-    "headpicture header aside"
-    "headpicture text aside";
+  -ms-grid-columns: 2fr 2fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr;
+  -ms-grid-rows: 0.5fr 3fr;
+      grid-template-rows: 0.5fr 3fr;
+      grid-template-areas: "headpicture name aside" "headpicture text aside";
 }
 
-.headpicture {
+.main-layout-grid .headpicture {
   background-color: chocolate;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: headpicture;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
-.header {
+.main-layout-grid .name {
   background-color: chartreuse;
-  grid-area: header;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
-.aside {
+.main-layout-grid .aside {
   background-color: cyan;
-  list-style-type: none; /* tar bort punkterna */
+  list-style-type: none;
+  /* tar bort punkterna */
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
   grid-area: aside;
 }
 
-.text {
+.main-layout-grid .text {
   background-color: darkolivegreen;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: text;
 }
-/* grid slut */
 
 /* flex */
 .aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  margin: auto;
+}
+
+.aside img {
+  height: 150px;
 }
 
 /* .a-header {
@@ -71,19 +116,14 @@ p {
   grid-column-start: 2;
   grid-column-end: 4;
 } */
-
 /* .d-employee {
   /* placerar de 3 icke-aktuella employees 
   display: grid;
   grid-column-start: 4; */
-
 /* border: 100px black; syns inte i någon class */
 /* width: 100px; */
 /*margin: auto; /* förstör .container justify-content*/
 /* border-bottom: 50px; */
 /* order: 3; */
 /* } */
-
-.aside img {
-  height: 150px;
-}
+/*# sourceMappingURL=employees.css.map */
