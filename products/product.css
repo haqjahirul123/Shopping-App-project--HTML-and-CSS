@@ -120,6 +120,7 @@
     border: 1px solid black;
     padding: 0.8rem 0;
     width: 125px;
+    font-size: small;
     font-family: inherit;
     text-transform: uppercase;
     cursor: pointer;
