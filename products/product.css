@@ -151,7 +151,8 @@
     align-items: center;
 }
 .rating span{
-    color: var(--carribean-green);
+    color: var(--carribean-pink);
+
 }
 .product-name{
     color: black;
