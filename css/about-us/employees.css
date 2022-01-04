@@ -2,7 +2,7 @@
 p {
   color: rgb(252, 252, 252);
   margin-bottom: 20px;
-  font-size: medium;
+  font-size: small;
 }
 
 h1 {
@@ -10,6 +10,9 @@ h1 {
   color: rgb(209, 72, 17);
   min-width: 10%;
   text-align: left;
+  margin: auto;
+  margin-bottom: 15px;
+  line-height: 0;
 }
 
 li {
@@ -18,7 +21,7 @@ li {
 
 @media (max-width: 599px) {
   h1 {
-    font-size: 150%;
+    font-size: auto;
   }
 }
 
