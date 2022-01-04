@@ -62,7 +62,7 @@ article {
     "headpicture article aside"
     "headpicture article aside";
 
-  @include for-phone-only() {
+  @include for-phone-only() /* Flyttar ur Aside ur grid */ {
     grid-template-areas:
       "headpicture article"
       "headpicture article";
@@ -104,7 +104,7 @@ article {
   margin: 0;
 
   @include for-phone-only() {
-    display: none; /* tar bort Aside vid liten skärm */
+    display: none; /* tar bort Aside vid liten skärm, men hade hellre lagt den längst ner istället*/
   }
 
   img {
