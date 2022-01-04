@@ -39,6 +39,7 @@ img.displayed {
   color: #f1f1f1;
   text-align: center;
   border-bottom: 1px solid #f1f1f1;
+  font-size: 100%;
 }
 
 .content {

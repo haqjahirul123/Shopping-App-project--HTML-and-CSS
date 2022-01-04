@@ -1,20 +1,19 @@
 @charset "UTF-8";
 p {
-  color: black;
-}
-
-@media (max-width: 599px) {
-  p {
-    color: red;
-  }
+  color: rgb(252, 252, 252);
+  margin-bottom: 20px;
+  font-size: medium;
 }
 
 h1 {
-  background-color: blue;
-  font-size: 3rem;
-  color: black;
+  font-size: 4rem;
+  color: rgb(209, 72, 17);
   min-width: 10%;
   text-align: left;
+}
+
+li {
+  color: white;
 }
 
 @media (max-width: 599px) {
@@ -24,10 +23,9 @@ h1 {
 }
 
 article {
-  background-color: greenyellow;
-  padding: 0px 10% 10%;
+  padding: 0px 5% 15%;
   min-width: 300px;
-  max-width: 1400px;
+  max-width: 1000px;
 }
 
 .headpicture {
@@ -39,32 +37,32 @@ article {
 }
 
 .aside {
-  width: 90%;
+  width: 80%;
 }
 
 /* grid Start */
 .main-layout-grid {
-  padding: 5px;
-  background-color: blanchedalmond;
+  padding: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.3fr 2fr 1fr;
-      grid-template-columns: 1.3fr 2fr 1fr;
-  -ms-grid-rows: 0.5fr 3fr;
-      grid-template-rows: 0.5fr 3fr;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
-      grid-template-areas: "headpicture article aside" "headpicture article aside";
+  grid-template-columns: 1.3fr 2fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  column-gap: 5px;
+  grid-template-areas:
+    "headpicture article aside"
+    "headpicture article aside";
 }
 
 @media (max-width: 599px) {
+  /* Flyttar ur Aside ur grid */
   .main-layout-grid {
-        grid-template-areas: "headpicture article" "headpicture article";
+    grid-template-areas:
+      "headpicture article"
+      "headpicture article";
   }
 }
 
 .main-layout-grid .headpicture {
-  background-color: chocolate;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -73,26 +71,16 @@ article {
 }
 
 .main-layout-grid article {
-  background-color: greenyellow;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: article;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  /* align-self: flex-start; */
+  justify-self: flex-start;
 }
 
 .main-layout-grid .aside {
-  background-color: cyan;
   list-style-type: none;
   /* tar bort punkterna */
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: aside;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 /* grid End */
@@ -103,14 +91,14 @@ article {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   font-size: 1rem;
   margin: 0;
 }
@@ -127,8 +115,11 @@ article {
   max-height: 200px;
 }
 
-/* Bootstrap Card css ändrad */
+/* Bootstrap Card css ändras här */
 .card {
   border: 2px solid rgba(0, 0, 0, 0.125);
+}
+.card-img-overlay {
+  color: black;
 }
 /*# sourceMappingURL=employees.css.map */

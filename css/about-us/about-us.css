@@ -1,26 +1,21 @@
-@charset "UTF-8";
-html {
-  /* width: 100%; */
-  /* behövs för att fylla ut hela webbläsaren */
-  /* height: 100%;
-  font-size: 16px; */
-  /* margin: 10px; */
-  /* Annorlunda än Global*/
-  /* padding: 10px; */
-  /* Annorlunda än Global*/
-  border: 2px;
-  border-style: solid, #ca1f52;
+#myHeader {
+  /* ändrar texten i Navbar */
+  font-size: 1.6rem;
+  color: #f1f1f1;
 }
 
-body {
-  min-height: 100px;
+#myHeader a {
+  /* ändrar texten i Navbar */
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
-/* .aboutUsText {
-  padding: 20px;
-} */
+#myHeader a:hover {
+  /* ändrar texten i Navbar */
+  color: #e22424;
+}
 
-/* Nedanför är bootstrap*/
+/* Start bootstrap*/
 * {
   margin: 0;
   padding: 0;
@@ -34,8 +29,8 @@ h1 {
   font-weight: normal;
   color: #444;
   text-align: center;
-  margin: 2rem 0;
-  padding: 30px;
+  padding-top: 3rem;
+  margin: 3rem 0;
 }
 
 .wrapper {
@@ -56,10 +51,8 @@ h1 {
 }
 
 .col {
-  width: calc(25% - 2rem);
-  /* org. 25%. 35% gör att bara 2 rutor visas*/
-  margin: 1rem;
-  /* avstånd mellan rutor */
+  width: calc(25% - 2rem); /* org. 25%. 35% gör att bara 2 visas*/
+  margin: 1rem; /* avstånd mellan rutor */
   cursor: pointer;
   min-width: 130px;
   max-width: 175px;
@@ -76,28 +69,41 @@ h1 {
 .back {
   background-size: cover;
   background-position: center;
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  /* cubic-bezier bestämmer hastighet */
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1); /* cubic-bezier bestämmer hastighet */
   transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
     -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
-  min-height: 280px;
-  /* höjden på rutan */
+  min-height: 280px; /* höjden på rutan */
   height: auto;
   border-radius: 10px;
   color: #fff;
   font-size: 1.5rem;
 }
 
+.front /* EGEN */ {
+  font-size: 2rem; /* EGEN. font-storlek till framsidan */
+}
+
+p {
+  /* EGEN */
+  padding-top: 10px; /*  flyttar ner texten i rutorna lite */
+  padding-bottom: 0px; /* ändrar ingenting  */
+}
+
 .back {
   background: #cedce7;
-  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
   background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
   background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.back a {
+  text-decoration: none;
 }
 
 .front:after {
@@ -110,17 +116,16 @@ h1 {
   content: "";
   display: block;
   opacity: 0.6;
-  background-color: #000;
-  /* gör hela rutan blek vid vitt */
+  background-color: #000; /* gör hela rutan blek vid vitt */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
 }
-
 .container:hover .front,
 .container:hover .back {
   -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
     -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -207,7 +212,6 @@ h1 {
     width: calc(33.333333% - 2rem);
   }
 }
-
 @media screen and (max-width: 48rem) {
   .col {
     width: calc(50% - 2rem);
@@ -220,6 +224,4 @@ h1 {
     margin: 0 0 2rem 0;
   }
 }
-
-/* slut på bootstrap */
-/*# sourceMappingURL=about-us.css.map */
+/* slut på bootstrap ny text */

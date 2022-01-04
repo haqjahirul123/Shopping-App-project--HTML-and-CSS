@@ -1,3 +1,4 @@
+/* bytt */
 @mixin for-phone-only {
   @media (max-width: 599px) {
     @content;
@@ -9,10 +10,6 @@
   }
 }
 
-// body {
-//   margin: 0;
-// }
-
 p {
   color: black;
 
@@ -22,7 +19,6 @@ p {
 }
 
 h1 {
-  background-color: blue;
   font-size: 3rem;
   color: black;
   min-width: 10%;
