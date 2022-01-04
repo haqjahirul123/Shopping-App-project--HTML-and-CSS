@@ -3,15 +3,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
       rel="stylesheet"
-      id="bootstrap-css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="blog.css" />
-
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="top-container">
@@ -33,54 +33,67 @@
     </div>
 
     <section class="blog-window">
-      <div class="blog-title">C-sharp - 16 Aug</div>
+      <div class="blog-title">C# - 16 Aug</div>
       <br />
       <div class="blog-container">
         <div class="blog-texts">
-          <div class="blog-lines">
-            The pain itself is a lot of pain He hates his services, he hates to
-            fall into any kind of situation, no one will pardon him, but he can
-            easily be countered by their flattery, at the most enduring ones. By
-            choosing, they abandon the fact that pleasures fall upon the sage,
-            and that no annoyance must be rejected by those who praise him, and
-            that pain follows him. That is just, we can enjoy pleasure. The key
-            to the accusers is the pain-free pain you encounter when some accuse
-            you. Pain is caused by the present or the things they are not aware
-            of. The pains of toil, and the pain arising from it, the troubles of
-            pleasure abandon the whole of pleasure, and receive them at fault?
-            We consider the needs of the architect the most because they are not
-            aware of it. Some of us drive back the pain of our pleasures, so
-            that the harsher choices that fall into the pleasure of taking on
-            others, being corrupted by those whom no one else has ever done, and
-            that he will find fault with himself!
-          </div>
+          Vårt äventyr som Webutvecklare inom .Net började i Augusti 2021. Här
+          träffade vi vår lärare Björn och insåg snart att vi var många som hade
+          samma ide. Detta skulle bli ett äventyr i sig att komma igång med
+          studier, att det var mycket att lära sig för att komma igång med att
+          vara utvecklare.
+          <br />
+          <br />
+          Vi fick snart börja lära oss C#, Github, men också hur viktigt det är
+          i vår branch att nätverka. Så vi hade tidigt en föreläsning om bland
+          annat Linked in och vi ombeddes att lägga till varandra. Det kan ju
+          hända att många av oss är kollegor i framtiden.
         </div>
+
         <div class="blog-img">
-          <img src="img/Csharp.jpg" />
-          <img src="img/Csharp.jpg" />
-          <img src="img/Csharp.jpg" />
-          <img src="img/Csharp.jpg" />
-          <img src="img/Csharp.jpg" />
-          <img src="img/Csharp.jpg" />
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="blog-img-rules"
+                  src="img/Csharp.jpg"
+                  alt="Chicago"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="blog-img-rules"
+                  src="img/Csharp.jpg"
+                  alt="Chicago"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="blog-img-rules"
+                  src="img/Csharp.jpg"
+                  alt="Chicago"
+                />
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
-    <script>
-      window.onscroll = function () {
-        myFunction()
-      }
-
-      var header = document.getElementById('myHeader')
-      var sticky = header.offsetTop
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add('sticky')
-        } else {
-          header.classList.remove('sticky')
-        }
-      }
-    </script>
   </body>
 </html>
