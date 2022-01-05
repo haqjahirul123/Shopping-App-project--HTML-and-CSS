@@ -85,8 +85,8 @@ article {
   grid-area: aside;
   align-self: flex-start;
 }
-
 /* grid End */
+
 /* flex */
 .aside {
   display: -webkit-box;
@@ -105,6 +105,7 @@ article {
   font-size: 1rem;
   margin: 0;
 }
+/* flex End */
 
 @media (max-width: 599px) {
   .aside {
