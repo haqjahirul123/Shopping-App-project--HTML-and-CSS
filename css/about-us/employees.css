@@ -1,0 +1,140 @@
+@charset "UTF-8";
+p {
+  color: rgb(252, 252, 252);
+  margin-bottom: 20px;
+  font-size: small;
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(209, 72, 17);
+  min-width: 10%;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 15px;
+  line-height: 0;
+}
+
+li {
+  color: white;
+}
+
+article {
+  padding: 0px 5% 15%;
+  min-width: 200px;
+  max-width: 1000px;
+}
+
+.headpicture {
+  padding-top: 10px;
+  width: 100%;
+  min-width: 100px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.aside {
+  padding-top: 10px;
+  width: 80%;
+}
+
+.top-container img {
+  box-shadow: 0 0 20px 10px #f1f1f1;
+}
+
+/* grid Start */
+.main-layout-grid {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1.3fr 2fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  column-gap: 5px;
+  grid-template-areas:
+    "headpicture article aside"
+    "headpicture article aside";
+}
+
+@media (max-width: 599px) {
+  /* Flyttar ur Aside ur grid */
+  .main-layout-grid {
+    grid-template-areas:
+      "headpicture article"
+      "headpicture article";
+  }
+}
+
+.main-layout-grid .headpicture {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: headpicture;
+  justify-self: flex-end;
+}
+
+.main-layout-grid article {
+  grid-area: article;
+  /* align-self: flex-start; */
+  justify-self: flex-start;
+}
+
+.main-layout-grid .aside {
+  list-style-type: none;
+  /* tar bort punkterna */
+  grid-area: aside;
+  align-self: flex-start;
+}
+
+/* grid End */
+/* flex */
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 599px) {
+  .aside {
+    display: none;
+    /* tar bort Aside vid liten skärm */
+  }
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 230%;
+  }
+}
+
+@media (max-width: 599px) {
+  .top-container img {
+    width: 50%;
+  }
+}
+
+.aside img {
+  max-width: 70%;
+  max-height: 200px;
+}
+
+/* Bootstrap Card css ändras här */
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+}
+.card-img-overlay {
+  color: black;
+}
+/*# sourceMappingURL=employees.css.map */

@@ -9,8 +9,8 @@ img.displayed {
   max-width: 55%;
   min-width: 300px;
   margin: auto;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top-logo {
@@ -39,6 +39,7 @@ img.displayed {
   color: #f1f1f1;
   text-align: center;
   border-bottom: 1px solid #f1f1f1;
+  font-size: 100%;
 }
 
 .content {

@@ -1,0 +1,115 @@
+/* bytt */
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+p {
+  color: black;
+
+  @include for-phone-only() {
+    color: red;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  color: black;
+  min-width: 10%;
+  text-align: left;
+
+  @include for-phone-only() {
+    font-size: 150%;
+  }
+}
+
+article {
+  background-color: greenyellow;
+  padding: 0px 10% 10%;
+  min-width: 300px;
+  max-width: 1400px;
+}
+
+.headpicture {
+  width: 100%;
+  min-width: 150px;
+  max-width: fit-content;
+}
+
+.aside {
+  width: 90%;
+}
+
+/* grid Start */
+.main-layout-grid {
+  padding: 5px;
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: 1.3fr 2fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  column-gap: 5px;
+  grid-template-areas:
+    "headpicture article aside"
+    "headpicture article aside";
+
+  @include for-phone-only() /* Flyttar ur Aside ur grid */ {
+    grid-template-areas:
+      "headpicture article"
+      "headpicture article";
+  }
+
+  .headpicture {
+    background-color: chocolate;
+    grid-area: headpicture;
+    justify-self: flex-end;
+  }
+
+  article {
+    background-color: greenyellow;
+    grid-area: article;
+    align-self: center;
+  }
+
+  // .text {
+  //   background-color: darkolivegreen;
+  //   grid-area: text;
+  // }
+
+  .aside {
+    background-color: cyan;
+    list-style-type: none; /* tar bort punkterna */
+    grid-area: aside;
+    align-self: flex-start;
+  }
+}
+/* grid End */
+
+/* flex */
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1rem;
+  margin: 0;
+
+  @include for-phone-only() {
+    display: none; /* tar bort Aside vid liten skärm, men hade hellre lagt den längst ner istället*/
+  }
+
+  img {
+    max-width: 70%;
+    max-height: 200px;
+  }
+}
+
+/* Bootstrap Card css ändrad */
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+}
