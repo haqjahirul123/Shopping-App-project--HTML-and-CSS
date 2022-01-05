@@ -170,26 +170,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* .blog-container {
-    display: grid;
-    grid-template-columns: minmax(0px, 1fr);
-    grid-template-rows: minmax(0px, 1fr) minmax(0px, 1fr);
-  }
-  .blog-img {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-column-end: 2;
-    grid-row-end: 3;
-    display: block;
-  }
-  .blog-texts {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
-    display: block;
-  } */
-
   .blog-img-rules {
     width: 100%;
     float: top;
