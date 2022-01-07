@@ -150,6 +150,8 @@ p {
   background-color: #9e9a9a;
   color: black;
   border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px #f1f1f1;
 }
 
 .blog-texts {
@@ -161,19 +163,31 @@ p {
 
 .blog-img {
   margin: 10px;
+  border-radius: 50%;
 }
 
 .blog-img-rules {
   float: right;
   margin-left: 10px;
-  width: 40%;
+  width: 50%;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
   .blog-img-rules {
     width: 100%;
-    float: top;
     align-content: center;
+  }
+
+  .blog-texts {
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    text-align: initial;
+  }
+
+  p {
+    text-align: initial;
   }
 }
 
@@ -186,4 +200,25 @@ p {
 .carousel-inner img {
   width: 100%;
   height: 100%;
+}
+
+.card-content {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: solid 3px #ff9b00;
+  box-shadow: 0 0 5px 5px #f1f1f1;
+}
+
+.Olivia {
+  color: yellow;
+}
+
+.fa-arrow-circle-right {
+  background-color: #ff9b00;
+  border-radius: 50%;
+}
+
+.fa-arrow-circle-left {
+  background-color: #ff9b00;
+  border-radius: 50%;
 }
