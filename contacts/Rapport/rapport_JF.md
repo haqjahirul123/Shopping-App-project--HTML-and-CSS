@@ -44,9 +44,20 @@ En sida som **Contacts** kan vara svårt att fylla med massa text och beskrivnin
 ---
 ## [**HTTP**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) - Hypertext Transfer Protocol
 <!-- Använd bilder från Inspector verktyget och förklara i grova lag hur webläsaren använder HTTP för att besöka just din hemsida. (Mål 2) -->
-<img width="80%" src="img/Developer_tools_network.png">
 
-TEXT TEXT TEXT 
+Genom att använda webbläsarens inbyggda verktyg *Developer tools* och navigera oss till fliken *Network* kan vi se hela förloppet som sker i och med att vi skriver in hemsidans URL *(http://127.0.0.1:5501/contacts/index.html)* och trycker enter.
+
+- Vi skickar en GET `index.html`, sedan får vi svaret 200 OK (request has succeeded) vilket betyder att resursen blivit hämtad och läses av webbläsare.
+
+- Webbläsaren läser igenom `index.html` filen och ser att det finns kod som vill hämta in fler objekt till webbläsare, exempelvis länkar till externa tjänster, andra filer i projktet så som CSS, JS och bilder. Snabbt läses alla filer igenom och hämtas till webbsidan tills det är klart.
+
+- Allt detta sker på ett par hundra millisekunder i detta fall och sidan vissas i sin helhet om allt gått bra och webbläsaren stödjer all kod. 
+
+<br/>
+
+
+<img width="80%" src="img/Developer_tools_network_GET.png">
+
 
  <br />
 
@@ -76,11 +87,11 @@ Några andra vanliga protokoll som används av applikationer är HTTPS, FTP, IMA
 ### **Auktoritet**
 Sedan kommer den del som kallas för **Authoity**, denne innehåller både en `Domain` och en `Port`. 
 
-- Domännamet identifierar vilken dator eller webbserver förfrågan ska hämtas ifrån. Bakom domännamnet döljer sig en [IP-adress](https://en.wikipedia.org/wiki/Internet_Protocol), men då det kan vara svårt för människor att komma ihåg massa långa siffer kombinationer _(64.233.160.0:17)_ översätter man IP-addressen till ett domännamn som exempelvis _www.google.se_ vilket är lättare att komma ihåg.
+- Domännamet identifierar vilken dator eller webbserver förfrågan ska hämtas ifrån. Bakom domännamnet döljer sig en [IP-adress](https://en.wikipedia.org/wiki/Internet_Protocol), men då det kan vara svårt för människor att komma ihåg massa långa siffer kombinationer *(64.233.160.0:17)* översätter man IP-addressen till ett domännamn som exempelvis *www.google.se* vilket är lättare att komma ihåg.
 
 - Porten används som en identifiering över vilken typ av service/applicering serverna använder. Porten är inte nödvändig och hoppas över om webservern anväder sig av standard portarna för HTTP(80) och HTTPS(443).
 
-I min URL kan vi se IP-addressen `127.0.0.1` och porten `5501` det är stadardvärden i configurationsfil för en plugin som heter _Live Server_ i Visual studio code. Live server skapar en lokal server på min dator för att vissa hemsida som är under uppbyggnad/utveckling.
+I min URL kan vi se IP-addressen `127.0.0.1` och porten `5501` det är stadardvärden i configurationsfil för en plugin som heter *Live Server* i Visual studio code. Live server skapar en lokal server på min dator för att vissa hemsida som är under uppbyggnad/utveckling.
 
 ### **Sökväg**
 
