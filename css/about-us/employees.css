@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 p {
   color: rgb(252, 252, 252);
   margin-bottom: 20px;
@@ -6,7 +7,7 @@ p {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: auto;
   color: rgb(209, 72, 17);
   min-width: 10%;
   text-align: left;
@@ -25,9 +26,16 @@ li a {
 }
 
 article {
-  padding: 0px 5% 15%;
-  min-width: 200px;
+  padding: 0 5% 5% 5%;
+  min-width: 300px;
   max-width: 1000px;
+}
+
+.card {
+  float: left;
+  margin: 0 30px 10px;
+  width: 40%;
+  max-width: 300px;
 }
 
 .headpicture {
@@ -55,34 +63,27 @@ article {
 
 /* grid Start */
 .main-layout-grid {
-  align-items: start;
   padding: 20px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 1.3fr 2fr 1fr;
-  grid-template-rows: 0.5fr 3fr;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 0.5fr 1fr;
   column-gap: 5px;
-  grid-template-areas:
-    "headpicture article aside"
-    "headpicture article aside";
+  grid-template-areas: "headpicture aside";
 }
 
 @media (max-width: 599px) {
   /* Flyttar ur Aside ur grid */
   .main-layout-grid {
     grid-template-areas:
-      "headpicture article"
-      "headpicture article";
+      "headpicture headpicture"
+      "aside aside";
   }
 }
 
 .main-layout-grid .headpicture {
   grid-area: headpicture;
   justify-self: flex-end;
-}
-
-.main-layout-grid article {
-  grid-area: article;
 }
 
 .main-layout-grid .aside {
@@ -107,8 +108,12 @@ article {
 
 @media (max-width: 599px) {
   .aside {
-    display: none;
-    /* tar bort Aside vid liten skärm */
+    /* display: none; */ /* tar bort Aside vid liten skärm */
+    flex-direction: row;
+    width: auto;
+  }
+  .aside p {
+    text-align: right;
   }
 }
 
@@ -121,6 +126,13 @@ article {
 @media (max-width: 599px) {
   .top-container img {
     width: 50%;
+  }
+}
+
+@media (max-width: 599px) {
+  .article {
+    width: 50%;
+    padding: 0 5% 5% 2%;
   }
 }
 
