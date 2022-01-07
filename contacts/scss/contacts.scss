@@ -60,6 +60,7 @@ h5 {
   background: rgba(255, 255, 255, 0.5);
   width: 120px;
   border-radius: 50%;
+  border: 3px solid white;
 }
 
 .circle:hover {
@@ -121,6 +122,15 @@ h5 {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+
+h2 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+}
+
 .contact-info {
   margin-top: 10%;
 }
