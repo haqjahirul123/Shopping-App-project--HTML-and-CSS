@@ -4,10 +4,11 @@ p {
   color: rgb(252, 252, 252);
   margin-bottom: 20px;
   font-size: small;
+  text-align: justify;
 }
 
 h1 {
-  font-size: auto;
+  font-size: xx-large;
   color: rgb(209, 72, 17);
   min-width: 10%;
   text-align: left;
@@ -26,7 +27,7 @@ li a {
 }
 
 article {
-  padding: 0 5% 5% 5%;
+  padding: 0 1% 5% 5%;
   min-width: 300px;
   max-width: 1000px;
 }
@@ -42,8 +43,6 @@ article {
   padding-top: 10px;
   width: 100%;
   min-width: 100px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
@@ -63,17 +62,19 @@ article {
 
 /* grid Start */
 .main-layout-grid {
+  margin: auto;
+  max-width: 1500px;
   padding: 20px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 0.5fr 1fr;
   column-gap: 5px;
   grid-template-areas: "headpicture aside";
 }
 
 @media (max-width: 599px) {
-  /* Flyttar ur Aside ur grid */
+  /* Flyttar ner Aside i grid */
   .main-layout-grid {
     grid-template-areas:
       "headpicture headpicture"
@@ -102,7 +103,6 @@ article {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 1rem;
   margin: 0;
 }
 /* flex End */
