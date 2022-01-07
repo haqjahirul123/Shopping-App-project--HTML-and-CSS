@@ -98,6 +98,7 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* flex-flow: column wrap; Flyttar ner en rad vid minskning*/
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -111,25 +112,27 @@ article {
     /* display: none; */ /* tar bort Aside vid liten skärm */
     flex-direction: row;
     width: auto;
+    justify-content: space-evenly;
   }
-  .aside p {
-    text-align: right;
-  }
-}
 
-@media (max-width: 599px) {
+  .aside p {
+    text-align: left;
+    padding: 5px;
+  }
+
+  .aside img {
+    justify-content: flex-end;
+    max-width: 100%;
+  }
+
   h1 {
     font-size: 230%;
   }
-}
 
-@media (max-width: 599px) {
   .top-container img {
     width: 50%;
   }
-}
 
-@media (max-width: 599px) {
   .article {
     width: 50%;
     padding: 0 5% 5% 2%;
