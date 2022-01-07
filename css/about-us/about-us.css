@@ -1,4 +1,10 @@
 @charset "UTF-8";
+p {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
 #myHeader {
   /* ändrar texten i Navbar */
   z-index: 1;
