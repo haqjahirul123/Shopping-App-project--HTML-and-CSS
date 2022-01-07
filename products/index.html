@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="top-container">
-      <img src="../img/logo.png" alt="logo" width="350px" />
+      <img src="../img/logo/logo_jahirul.png" alt="logo" width="350px" />
     </div>
 
     <div class="header" id="myHeader">
@@ -24,23 +24,21 @@
         The header will stick to the top when you reach its scroll position.
       </p>
       <p>Scroll back up to remove the sticky effect.</p>
-      <p>
-        Products
-      </p>
+      <p>Products</p>
     </div>
     <script>
       window.onscroll = function () {
-        myFunction()
-      }
+        myFunction();
+      };
 
-      var header = document.getElementById('myHeader')
-      var sticky = header.offsetTop
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
 
       function myFunction() {
         if (window.pageYOffset > sticky) {
-          header.classList.add('sticky')
+          header.classList.add("sticky");
         } else {
-          header.classList.remove('sticky')
+          header.classList.remove("sticky");
         }
       }
     </script>
