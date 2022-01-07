@@ -1,12 +1,14 @@
 @charset "UTF-8";
+
 p {
   color: rgb(252, 252, 252);
   margin-bottom: 20px;
   font-size: small;
+  text-align: justify;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: xx-large;
   color: rgb(209, 72, 17);
   min-width: 10%;
   text-align: left;
@@ -19,18 +21,28 @@ li {
   color: white;
 }
 
+li a {
+  /* flyttar in bilderna i Aside, då länken i index har margin 12*/
+  margin: 0;
+}
+
 article {
-  padding: 0px 5% 15%;
-  min-width: 200px;
+  padding: 0 1% 5% 5%;
+  min-width: 300px;
   max-width: 1000px;
+}
+
+.card {
+  float: left;
+  margin: 0 30px 10px;
+  width: 40%;
+  max-width: 300px;
 }
 
 .headpicture {
   padding-top: 10px;
   width: 100%;
   min-width: 100px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
@@ -39,95 +51,92 @@ article {
   width: 80%;
 }
 
+.aside img {
+  max-width: 70%;
+  max-height: 200px;
+}
+
 .top-container img {
   box-shadow: 0 0 20px 10px #f1f1f1;
 }
 
 /* grid Start */
 .main-layout-grid {
+  margin: auto;
+  max-width: 1500px;
   padding: 20px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 1.3fr 2fr 1fr;
-  grid-template-rows: 0.5fr 3fr;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   column-gap: 5px;
-  grid-template-areas:
-    "headpicture article aside"
-    "headpicture article aside";
+  grid-template-areas: "headpicture aside";
 }
 
 @media (max-width: 599px) {
-  /* Flyttar ur Aside ur grid */
+  /* Flyttar ner Aside i grid */
   .main-layout-grid {
     grid-template-areas:
-      "headpicture article"
-      "headpicture article";
+      "headpicture headpicture"
+      "aside aside";
   }
 }
 
 .main-layout-grid .headpicture {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   grid-area: headpicture;
   justify-self: flex-end;
-}
-
-.main-layout-grid article {
-  grid-area: article;
-  /* align-self: flex-start; */
-  justify-self: flex-start;
 }
 
 .main-layout-grid .aside {
   list-style-type: none;
   /* tar bort punkterna */
   grid-area: aside;
-  align-self: flex-start;
 }
-
 /* grid End */
+
 /* flex */
 .aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  /* flex-flow: column wrap; Flyttar ner en rad vid minskning*/
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  font-size: 1rem;
   margin: 0;
 }
+/* flex End */
 
 @media (max-width: 599px) {
   .aside {
-    display: none;
-    /* tar bort Aside vid liten skärm */
+    /* display: none; */ /* tar bort Aside vid liten skärm */
+    flex-direction: row;
+    width: auto;
+    justify-content: space-evenly;
   }
-}
 
-@media (max-width: 599px) {
+  .aside p {
+    text-align: left;
+    padding: 5px;
+  }
+
+  .aside img {
+    justify-content: flex-end;
+    max-width: 100%;
+  }
+
   h1 {
     font-size: 230%;
   }
-}
 
-@media (max-width: 599px) {
   .top-container img {
     width: 50%;
   }
-}
 
-.aside img {
-  max-width: 70%;
-  max-height: 200px;
+  .article {
+    width: 50%;
+    padding: 0 5% 5% 2%;
+  }
 }
 
 /* Bootstrap Card css ändras här */
