@@ -1,46 +1,305 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-SE">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4XJUNIOR | Contacts</title>
+    <!-- SEO -->
+    <meta
+      name="keywords"
+      content=" webutvecklare, konsult, dalarna, IT, IT-konsult"
+    />
+    <meta
+      name="description"
+      content="A small but very competent tech company from the heart of Sweden, Dalarna. We will help you with big or small IT-solutions for your bussiness."
+    />
+    <meta
+      name="author"
+      content="Jon Krantz, Johan Fahlgren, Joakim Engström, Jahirul Haq"
+    />
+
+    <!-- JAVASCRIPT -->
+    <script
+      src="https://kit.fontawesome.com/1321b8d9f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/contacts/contacts.js"></script>
+    <!-- CSS -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="scss/contacts.css" />
   </head>
+
   <body>
-    <div class="top-container">
-      <img src="../img/logo.png" alt="logo" width="350px" />
+    <header class="main-header">
+      <div class="top-container">
+        <img
+          class="top-logo"
+          src="../img/logo/logo_johan.png"
+          alt="logo"
+          width="350px"
+        />
+      </div>
+    </header>
+
+    <nav>
+      <div class="header" id="myHeader">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Contacts</a>
+        <a href="../products/index.html">Products</a>
+        <a href="../about-us/index.html">About us</a>
+        <a href="../blog/index.html">Blog</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-container">
+        <!-- Person1 -->
+        <div class="person-container">
+          <div class="person">
+            <img
+              class="circle"
+              src="/contacts/img/pp_johan.jpg"
+              alt="picture of johan fahlgren"
+            />
+
+            <div class="name">Johan Fahlgren</div>
+            <div class="divider"></div>
+            <div class="social-media">
+              <a href="mailto:johan.fahlgren@fourxjuniors.com"
+                ><i class="fas fa-envelope-square"></i
+              ></a>
+
+              <a
+                href="https://www.linkedin.com/in/johanfahlgren/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+
+              <a href="https://github.com/ECU-JF" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- person2 -->
+          <div class="person">
+            <img
+              class="circle rotate55"
+              src="/contacts/img/pp_joakim.jpg"
+              alt=" picture of joakim engstrom"
+            />
+
+            <div class="name">Joakim Engström</div>
+            <div class="divider"></div>
+            <div class="social-media">
+              <a href="mailto:joakim.engstrom@fourxjuniors.com"
+                ><i class="fas fa-envelope-square"></i
+              ></a>
+
+              <a
+                href="https://www.linkedin.com/in/joakim-engstr%C3%B6m-19997261/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+
+              <a href="https://github.com/JoakimIengstrom" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- person3 -->
+          <div class="person">
+            <img
+              class="circle"
+              src="/contacts/img/pp_jahirul.jpg"
+              alt="picture of jahirul haq"
+            />
+
+            <div class="name">Jahirul Haq</div>
+            <div class="divider"></div>
+            <div class="social-media">
+              <a href="mailto:jahirul.haq@fourxjuniors.com"
+                ><i class="fas fa-envelope-square"></i
+              ></a>
+
+              <a
+                href="https://www.linkedin.com/in/haq-jahirul-b89488184/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+
+              <a href="https://github.com/haqjahirul123" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- person4 -->
+          <div class="person">
+            <img
+              class="circle"
+              src="/contacts/img/pp_jon.jpg"
+              alt="picture of jon krantz"
+            />
+
+            <div class="name">Jon Krantz</div>
+            <div class="divider"></div>
+            <div class="social-media">
+              <a href="mailto:jon.krantz@fourxjuniors.com"
+                ><i class="fas fa-envelope-square"></i
+              ></a>
+
+              <a
+                href="https://www.linkedin.com/in/jon-krantz-399047202/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+
+              <a href="https://github.com/jonrickardkrantz" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT US -->
+        <div class="content">
+          <div class="container-contact">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="contact-info">
+                  <img
+                    class="contact-logo"
+                    src="https://image.ibb.co/kUASdV/contact-image.png"
+                    alt="image"
+                  />
+                  <h2>Contact Us</h2>
+                  <h4>We would love to hear from you!</h4>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="contact-form">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="fname"
+                      >First Name:</label
+                    >
+                    <div class="col-sm-10">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fname"
+                        placeholder="Enter First Name"
+                        name="fname"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="lname"
+                      >Last Name:</label
+                    >
+                    <div class="col-sm-10">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lname"
+                        placeholder="Enter Last Name"
+                        name="lname"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="email"
+                      >Email:</label
+                    >
+                    <div class="col-sm-10">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                        name="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="comment"
+                      >Comment:</label
+                    >
+                    <div class="col-sm-10">
+                      <textarea
+                        class="form-control"
+                        rows="5"
+                        id="comment"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button
+                        type="submit"
+                        class="btn btn-default"
+                        onclick="submit_btn()"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_contacts">
+        <div class="newsletter">
+          <h5 class="h5-footer">Subscribe to our newsletter</h5>
+          <button type="button" class="subscribe_btn" onclick="subscribe_btn()">
+            subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup-1">
+      <div class="overlay">
+        <div class="popup-content">
+          <div class="close-btn" onclick="subscribe_btn()">&times;</div>
+          <h4>Subscribe to our newsletter</h4>
+          <div class="email-input">
+            <form action="">
+              <label for="email" aria-placeholder="Enter your email address"
+                >Email:</label
+              >
+              <input type="email" id="email" name="email" />
+              <input type="submit" />
+            </form>
+          </div>
+          <p>We will not spam you &#128521;</p>
+        </div>
+      </div>
     </div>
 
-    <div class="header" id="myHeader">
-      <h2>Navigation</h2>
-      <a href="../index.html">Home</a>
-      <a href="index.html">Contacts</a>
-      <a href="../products/index.html">Products</a>
-      <a href="../about-us/index.html">About us</a>
-      <a href="../blog/index.html">Blog</a>
-    </div>
-
-    <div class="content">
-      <h3>On Scroll Sticky Header</h3>
-      <p>
-        The header will stick to the top when you reach its scroll position.
-      </p>
-      <p>Scroll back up to remove the sticky effect.</p>
-      <p>
-        Contacts
-      </p>
-    </div>
     <script>
       window.onscroll = function () {
-        myFunction()
-      }
+        myFunction();
+      };
 
-      var header = document.getElementById('myHeader')
-      var sticky = header.offsetTop
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
 
       function myFunction() {
         if (window.pageYOffset > sticky) {
-          header.classList.add('sticky')
+          header.classList.add("sticky");
         } else {
-          header.classList.remove('sticky')
+          header.classList.remove("sticky");
         }
       }
     </script>

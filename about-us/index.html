@@ -1,48 +1,168 @@
+<!-- TODO Rutorna med bilder går över navbar
+TODO index.html är förändrad med bland annat glow på logga, men det går inte över till about us
+TODO NavigationBar font-size blir annorlunda, samt loggan är inte responsiv  -->
+
 <!DOCTYPE html>
-<html>
+<html class="background-image" lang="en">
   <head>
+    <title>Grupprojekt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, programmering, lead tech, programmers, employ, julbord"
+    />
+    <meta
+      name="description"
+      content="Programmers to employ and consults to your web-development work for you. The for top hackers in russia."
+    />
+    <meta
+      name="author"
+      content="Jon Krantz, Johan Fahlgren, Joakim Engström, Jahirul Haq"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/index.css" />
+
+    <link rel="icon" type="image/fav-icon" href="/img/favicon.png" />
+
+    <!-- CDN (Content Delivery Network) används här för bootstrapen -->
+    <link 
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/about-us/about-us.css" />
+
   </head>
+
   <body>
     <div class="top-container">
-      <img src="../img/logo.png" alt="logo" width="350px" />
+      <img src="../img/logo/logo_jon.png" alt="logo" width="350px" />
     </div>
 
     <div class="header" id="myHeader">
-      <h2>Navigation</h2>
       <a href="../index.html">Home</a>
       <a href="../contacts/index.html">Contacts</a>
       <a href="../products/index.html">Products</a>
-      <a href="index.html">About us</a>
+      <a href="index.html" id="actual-nav">About us</a>
       <a href="../blog/index.html">Blog</a>
     </div>
-
-    <div class="content">
-      <h3>On Scroll Sticky Header</h3>
-      <p>
-        The header will stick to the top when you reach its scroll position.
-      </p>
-      <p>Scroll back up to remove the sticky effect.</p>
-      <p>
-        AboutUS
-      </p>
-    </div>
-    <script>
+ 
+    <script>/*  Detta skript är nav-bar i toppen */
       window.onscroll = function () {
-        myFunction()
-      }
-
-      var header = document.getElementById('myHeader')
-      var sticky = header.offsetTop
-
+        myFunction();
+      };
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
       function myFunction() {
         if (window.pageYOffset > sticky) {
-          header.classList.add('sticky')
+          header.classList.add("sticky");
         } else {
-          header.classList.remove('sticky')
+          header.classList.remove("sticky");
         }
       }
     </script>
+    
+    <!--Här börjar bootstrapen-->
+    <div class="wrapper">
+      <h1>This is our Superb Crew of ex-Google TechLeads</h1>
+      <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div
+              class="front"
+              style="background-image: url(../img/employees/pexels-andrea-piacquadio-834863.gif);"
+            >
+              <div class="inner">
+                <p>Jahirul Haq</p>
+                <span>Backend programmerare</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                 <a href="employees_jahirul.html"> Jahirul är en TechMinior systemutvecklare på jakt efter en ny spännande utmaning.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div 
+            class="front" 
+            style="background-image: url(../img/employees/pexels-simon-robben-614810.gif)"
+            >
+              <div class="inner">
+                <p>Joakim Engström</p>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                  <a href="employees_joakim.html"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Alias cum repellat velit quae suscipit c.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div
+              class="front"
+              style="background-image: url(../img/employees/pexels-hebert-santos-6284157.gif)"
+            >
+              <div class="inner">
+                <p>Johan Fahlgren</p>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                  <a href="employees_johan.html">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Alias cum repellat velit quae suscipit c.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div
+              class="front"
+              style="background-image: url(../img/employees/pexels-gabriel-lara-3657506.gif)"
+            >
+              <div class="inner">
+                <p>Jon Krantz</p>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>
+                  <a href="employees_jon.html">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Alias cum repellat velit quae suscipit c.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--Här slutar bootstrapen-->
   </body>
 </html>

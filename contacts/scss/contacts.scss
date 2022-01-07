@@ -1,0 +1,442 @@
+.body {
+  /*  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  margin: 0;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0px;
+  line-height: 110%;
+  color: #25274d;
+}
+
+.main-header {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  z-index: 1;
+}
+
+.main-container {
+  margin: auto;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+/*  CONTACT PERSON */
+
+.person-container {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 20px;
+  justify-content: space-around;
+
+  grid-row: 1 /2;
+  grid-column: 1 /5;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  background: rgba(255, 255, 255, 0.5);
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.circle:hover {
+  box-shadow: 0 0 10px 5px #ffed8463;
+  border-radius: 50%;
+  width: 130px;
+  transition: ease-in 0.5s;
+}
+
+.rotate55 {
+  transform: rotate(-55deg);
+}
+
+.divider {
+  height: 2px;
+  width: 120px;
+  margin-top: 10px;
+  background-color: #ff9b00;
+}
+
+.name {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.social-media {
+  width: 100px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.social-media a {
+  margin-left: 0;
+}
+
+/* CONTACT US */
+
+.content {
+  justify-self: center;
+  width: 90%;
+  grid-row: 2 / 3;
+  grid-column: 1 / 5;
+}
+.contact {
+  padding: 4%;
+  height: auto;
+}
+.col-md-3 {
+  border: 3px solid white;
+  background: #ff9b00;
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+.contact-info {
+  margin-top: 10%;
+}
+.contact-info img {
+  margin-bottom: 15%;
+}
+.contact-info h2 {
+  margin-bottom: 10%;
+}
+.col-md-9 {
+  background: rgb(255, 255, 255);
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label {
+  font-weight: 600;
+  max-width: none;
+}
+.contact-form button {
+  background: #fff;
+  border: 1px solid #ff9b00;
+  color: #ff9b00;
+  font-weight: 600;
+  width: 25%;
+  transition: 0.5s;
+}
+.contact-form button:focus {
+  box-shadow: none;
+}
+
+button:hover {
+  background: #ff9b00;
+  color: #fff;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contact-logo {
+  text-align: center;
+}
+
+label {
+  color: #ff9b00;
+  display: grid;
+}
+
+.form-control {
+  color: #25274d;
+}
+
+/* https://sweetalert.js.org/ */
+
+.swal2-styled.swal2-confirm {
+  border: 2px solid #ff9b00;
+  color: #ff9b00;
+  background-color: #fff;
+  box-shadow: 0 0 0 0;
+  border-radius: 3px;
+}
+
+.swal2-styled.swal2-confirm:hover {
+  background-color: #ff9b00;
+  color: #fff;
+}
+
+.swal-button--success {
+  color: #ff9b00;
+}
+
+/* Footer */
+
+.footer_contacts {
+  border-top: 3px solid white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  clear: both;
+  margin-top: 100px;
+  background-color: #ff9b00;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+}
+
+.newsletter {
+  height: 30px;
+  width: 370px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.h5-footer {
+  font-size: 1.2rem;
+  color: #25274d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.subscribe_btn {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ff9b00;
+  color: #ff9b00;
+  font-weight: 600;
+  min-width: 10%;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.subscribe_btn:hover {
+  background: #ff9b00;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* SUBSCRIPTION POPUP */
+
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.email-input {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.popup .popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-image: url(/contacts/img/photo-1548504773-429e84f586d2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 500px;
+  height: 300px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  & > h4 {
+    padding-top: 20px;
+  }
+
+  & > label {
+    color: #25274d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  & > input {
+    color: #25274d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    border-radius: 3px;
+  }
+
+  & > p {
+    color: #25274d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .popup-content {
+  transition: all 500ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* #region MOBILE/TABLET 320px -> 767px */
+
+@media (max-width: 767px) {
+  .content {
+    min-width: 320px;
+  }
+
+  .main-container {
+    width: auto;
+  }
+
+  .person-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .col-sm-2 {
+    max-width: none;
+  }
+
+  .col-md-3 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .col-md-9 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .col-sm-10 {
+    width: auto;
+  }
+
+  .contact-info {
+    margin-top: 0px;
+
+    & > img {
+      margin-bottom: 0%;
+    }
+
+    & > h2 {
+      margin-bottom: 25px;
+      font-size: 1.7rem;
+    }
+
+    & > h4 {
+      margin-bottom: 25px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .contact-form button {
+    width: auto;
+  }
+
+  .h5-footer {
+    font-size: 1.1rem;
+  }
+
+  .popup .popup-content {
+    width: 320px;
+    height: 300px;
+  }
+
+  .email-input {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p {
+    padding: 16px 0px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-2 {
+    max-width: none;
+  }
+}

@@ -1,0 +1,152 @@
+*******HTML*******
+
+
+<div class="center">
+    <input type="checkbox" id="click" />
+    <label for="click" class="click-me">Submit</label>
+        <div class="box-content">
+            <div class="box-header">
+                <h2>Info</h2>
+                <label for="click" class="fas fa-times"></label>
+                </div>
+                <label for="click" class="fas fa-check"></label>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam, culpa?
+                </p>
+                <div class="line"></div>
+        <label for="click" class="close-btn">Close</label>
+    </div>
+</div>
+
+link:
+    <script
+      src="https://kit.fontawesome.com/1321b8d9f5.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+*******CSS*******
+
+/* POPUP WINDOW */
+
+.center, .box-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#click{
+  display: none;
+}
+
+.click-me{
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: #FFF;
+  border: 1px solid #ff9b00;
+  color: #ff9b00;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 40px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.click-me:hover{
+  background: #ff9b00;
+  color:#fff;
+
+}
+
+.box-content{
+  opacity: 0;
+  visibility: hidden;
+  width: 400px;
+  height: 350px;
+  background: #fff;  
+  border-radius: 3px;
+  transition: .0s ease-in;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+
+}
+
+#click:checked ~ .box-content{
+  opacity: 1;
+  visibility: visible;
+}
+
+.box-header{
+  height: 68px;
+  background: #ff9b00;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.box-header h2{
+  padding: 16px 0 0 32px;
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.fa-times{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa-check{
+  font-size: 50px;
+  border: 2px solid #ff9b00;
+  padding-top: 14px;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 30px 0 0 160px;
+}
+
+p{
+  padding-top: 20px;
+  color: #25274d;
+  font-size: 19px;
+  text-align: center;
+
+}
+
+.line{
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  height: 1px;
+  background: #25274d;
+}
+
+.close-btn{
+  margin: 0px;
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  border: 1px solid #ff9b00;
+  border-radius: 3px;
+  padding: 4px 6px;
+  font-size: 18px;
+  cursor: pointer;
+
+}
+
+.close-btn:hover{
+
+  background: #ff9b00;
+  color: #fff;
+  transition: .5s;
+
+}

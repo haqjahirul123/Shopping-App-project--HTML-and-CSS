@@ -9,7 +9,9 @@
   </head>
   <body>
     <div class="top-container">
-      <img class="top-logo" src="../img/logo.png" alt="logo" width="350px" />
+
+      <img src="../img/logo/logo_jahirul.png" alt="logo" width="350px" />
+
     </div>
 
     <div class="header" id="myHeader">
@@ -19,6 +21,7 @@
       <a href="../about-us/index.html">About us</a>
       <a href="../blog/index.html">Blog</a>
     </div>
+
 
      <!-- **here below start task** -->
              <div class="flex-container">
@@ -356,5 +359,23 @@
                  </div>
              </div>
          </div> 
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
   </body>
 </html>

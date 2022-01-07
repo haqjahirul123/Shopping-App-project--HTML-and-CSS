@@ -1,6 +1,8 @@
 /* card details start  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Oooh+Baby&family=Patua+One&display=swap');
+
 section {
   padding: 20px 0;
 }
@@ -110,13 +112,113 @@ a.btn-card {
 }
 
 .blog-heading {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
   color: #f1f1f1;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
+  background-color: #1e1842;
+  padding-top: 25px;
 }
 
 /* End card section */
 
 p {
+  color: black;
+  text-align: justify;
   color: #f1f1f1;
+}
+
+.blog-window {
+  color: #f1f1f1;
+  padding: 40px;
+  margin: 10px;
+  font-size: 25px;
+  font-family: 'Amiri', serif;
+  display: inline-block;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.blog-container {
+  background-color: #9e9a9a;
+  color: black;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px #f1f1f1;
+}
+
+.blog-texts {
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+  padding: 10px;
+}
+
+.blog-img {
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.blog-img-rules {
+  float: right;
+  margin-left: 10px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .blog-img-rules {
+    width: 100%;
+    align-content: center;
+  }
+
+  .blog-texts {
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    text-align: initial;
+  }
+
+  p {
+    text-align: initial;
+  }
+}
+
+@media (max-width: 352px) {
+  .blog-heading .btn-card:nth-child(2) {
+    order: 1;
+  }
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: solid 3px #ff9b00;
+  box-shadow: 0 0 5px 5px #f1f1f1;
+}
+
+.Olivia {
+  color: yellow;
+}
+
+.fa-arrow-circle-right {
+  background-color: #ff9b00;
+  border-radius: 50%;
+}
+
+.fa-arrow-circle-left {
+  background-color: #ff9b00;
+  border-radius: 50%;
 }
