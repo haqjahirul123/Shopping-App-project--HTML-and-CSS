@@ -67,8 +67,12 @@ a {
 }
 
 a:hover {
-  color: #e22424;
+  color: #ff9b00;
+  font-weight: bold;
+  text-decoration: none;
 }
+
+/*TODO - lägg till att activ nav är markerad med färg*/
 
 h3 {
   color: #f1f1f1;
