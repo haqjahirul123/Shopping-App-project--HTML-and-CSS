@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="productDetails.css" crossorigin="anonymous" />
+    
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    
+    <!-- product -->
+    <div class="container product-wrap clearfix productdetails">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="product-image">
+                    <div id="myCarousel-2" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel-2" data-slide-to="0" class=""></li>
+                            <li data-target="#myCarousel-2" data-slide-to="1" class="active"></li>
+                            <li data-target="#myCarousel-2" data-slide-to="2" class=""></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="item active">
+                                <img src="https://i.ibb.co/dWDHTVJ/angular.png" class="img-responsive imagePosition" alt=""  border="0" />
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="item">
+                                <img src="https://i.ibb.co/QP0NGdp/Png-Item-3612366.png" class="img-responsive imagePosition" alt="" border="0">
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="item">
+                                <img src="https://i.ibb.co/fn2Kpnf/Png-Item-3612161.png" class="img-responsive imagePosition" alt="" border="0">
+                            </div>
+                        </div>
+                        <div class="left carousel-control" href="#myCarousel-2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left arrow-color"></span> </div>
+                        <div class="right carousel-control" href="#myCarousel-2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right arrow-color"></span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+                <h2 class="name">
+                    Angular for Frontend 
+                    <small>Product by <a href="">Google</a></small>
+                </h2>
+                        <i class="fa fa-star fa-2x  rating"></i>
+                        <i class="fa fa-star fa-2x  rating"></i>
+                        <i class="fa fa-star fa-2x  rating"></i>
+                        <i class="fa fa-star fa-2x text-muted "></i>
+                        <i class="fa fa-star fa-2x text-muted "></i>  
+                   
+                    <span class="fa fa-2x"><h6>(118) Votes</h6></span>
+                    <a href="">137 customer reviews</a>
+                
+                <hr />
+                <h4>
+                    $129.54
+                    <small>*includes tax</small>
+                </h4>
+                <div class="certified">
+                    <ul>
+                        <li>
+                            <a href="">Delivery time<span>3 Working Days</span></a>
+                        </li>
+                        <li>
+                            <a href="">Certified<span>Quality Assured</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr />
+                <div class="description description-tabs">
+                    <ul id="myTab" class="nav nav-pills">
+                        <li class="active"><a href="#productdescription" data-toggle="tab" class="no-margin">Product Description </a></li>
+                        <li class=""><a href="#technicalspecifications" data-toggle="tab">Technical Specifications</a></li>
+                        <li class=""><a href="#customersreviews" data-toggle="tab">Customer Reviews</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="productdescription">
+                            <br />
+                            <strong>Description </strong>
+                            <p>
+                                Angular (commonly referred to as "Angular 2+" or "Angular CLI")[4][5] is a TypeScript-based free and open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
+                                Angular is used as the frontend of the MEAN stack, consisting of MongoDB database, Express.js web application server framework, Angular itself (or AngularJS), and Node.js server runtime environment.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="technicalspecifications">
+                            <strong>Technical specifications</strong>
+                            <p>
+                                The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components that are organized into NgModules. NgModules collect related code into functional sets; an Angular application is defined by a set of NgModules. An application always has at least a root module that enables bootstrapping, and typically has many more feature modules.
+                            </p>
+                        </div>
+                            <br />
+                          
+                        <div class="tab-pane fade" id="customersreviews">
+                            <p>
+                                The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components that are organized into NgModules. NgModules collect related code into functional sets; an Angular application is defined by a set of NgModules. An application always has at least a root module that enables bootstrapping, and typically has many more feature modules.
+                            </p> 
+                        </div>
+                    
+                </div>
+                <hr />
+               
+            </div>
+        </div>
+    </div>
+    <a href="/products/index.html" type = "button" class = " btn-primary btn-cart"> Go Product Page
+        <span><i class="fas fa-house-damage"></i></span>
+    </a>
+    <!-- end product -->
+</div>
+
+
+</body>
+</html>
