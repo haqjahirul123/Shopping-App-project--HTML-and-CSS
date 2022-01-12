@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="background-image" lang="en">
+  <head>
+    <title>Grupprojekt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="keywords"
+      content="Konsult, IT-konsulterna, IT, om oss, about us, HTML, CSS, JavaScript, programmering, lead tech, programmers, employ, frontend, Backend, Wireframe, Adobe Xd, programmerare, julbord"
+    />
+    <meta
+      name="description"
+      content="Programmers to employ and consults to your web-development work for you. The for top hackers in Russia."
+    />
+    <meta
+      name="author"
+      content="Jon Krantz, Johan Fahlgren, Joakim Engström, Jahirul Haq"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/fav-icon" href="/img/favicon.png" />
+
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/about-us/about-us.css" />
+    <link rel="stylesheet" href="/css/about-us/employees.css" />
+  </head>
+
+  <body>
+    <div class="top-container">
+      <img src="../img/logo/logo_jon.png" alt="logo" width="350px" />
+    </div>
+
+    <div class="header" id="myHeader">
+      <a href="../index.html">Home</a>
+      <a href="../contacts/index.html">Contacts</a>
+      <a href="../products/index.html">Products</a>
+      <a href="index.html" id="actual-nav">About us</a>
+      <a href="../blog/index.html">Blog</a>
+    </div>
+
+    <script>
+      /*  Detta skript är nav-bar i toppen */
+      window.onscroll = function () {
+        myFunction();
+      };
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <main class="main-layout-grid">
+      <nav class="headpicture">
+        <!-- bootstrap card -->
+        <div class="card bg-dark text-white">
+          <img src="../img/employees/Johan.gif" class="card-img" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Johan Fahlgren</h5>
+            <h6 class="card-text">TechLead Fullstack</h6>
+          </div>
+        </div>
+        <!-- slut bootstrap card -->
+        <article>
+          <h1 class="name">Johan Fahlgren</h1>
+          <p>
+            Technically minded, organised and adaptable senior fullstack
+            developer. Experience with Languages: JavaScript, HTML, CSS, Python
+            Libraries and Frameworks: React, JQuery, Flask, Django. I have a
+            varied and colorful work history adding experiences with CAD design,
+            the accounting industry and company management.<br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos
+            itaque non maiores saepe earum sint voluptatem molestias, dolor
+            ducimus fugit, officia recusandae provident tempora nam porro!
+            Facere incidunt, quae officiis, voluptatum veritatis quo iste
+            molestias sed suscipit recusandae accusamus perspiciatis, maxime
+            corporis! Blanditiis provident accusantium illum optio commodi.
+            Consectetur quam voluptatem quod alias recusandae distinctio minima
+            atque ad magni amet, quia molestiae aliquid sit laborum excepturi
+            voluptas, maiores velit sint. Commodi fugiat eveniet neque ipsum
+            ipsa. Non officia deleniti amet, consequatur nesciunt neque ab
+            excepturi, reiciendis deserunt, consequuntur beatae maiores minus
+            aliquam? Consectetur ea quod ab necessitatibus, error asperiores!
+          </p>
+        </article>
+      </nav>
+
+      <ul class="aside">
+        <li>
+          <a href="employees_jon.html" title="Frontend-utvecklare Jon Krantz"
+            ><img src="../img/employees/pp_jon.jpg" alt="Jon Krantz"
+          /></a>
+        </li>
+        <p>Jon Krantz</p>
+        <li>
+          <a href="employees_jahirul.html" title="TechLead Jahirul Haq">
+            <img src="/img/employees/pp_jahirul.jpg" alt="Jahirul Haq"
+          /></a>
+        </li>
+        <p>Jahirul Haq</p>
+        <li>
+          <a
+            href="employees_Joakim.html"
+            title="Frontend-utvecklare Joakim Engström"
+          >
+            <img src="/img/employees/pp_joakim.jpg" alt="Joakim Engström" />
+          </a>
+        </li>
+        <p>Joakim Engström</p>
+      </ul>
+    </main>
+  </body>
+</html>
