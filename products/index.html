@@ -4,23 +4,314 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="product.css" />
-    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+     <!-- POPUP JS -->
+     <script src="../contacts/contacts.js"></script>
   </head>
   <body>
     <div class="top-container">
-
       <img src="../img/logo/logo_jahirul.png" alt="logo" width="350px" />
-
     </div>
 
     <div class="header" id="myHeader">
       <a href="../index.html">Home</a>
       <a href="../contacts/index.html">Contacts</a>
-      <a href="index.html">Products</a>
+      <a href="index.html" class="active_nav">Products</a>
       <a href="../about-us/index.html">About us</a>
       <a href="../blog/index.html">Blog</a>
     </div>
+
+    <!-- **here below start task** -->
+    <div class="flex-container">
+      <div class="product-collection,flex-left">
+        <div class="container">
+          <div class="product-collection-wrapper">
+            <!-- product col left -->
+            <div class="product-col-left flex">
+              <div class="product-col-content">
+                <h2 class="small-title">Frontend softawre</h2>
+                <h2 class="medium-title">React.js</h2>
+                <p class="text-light">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <!-- <button type = "button" class = "btn-dark">Shop now</button> -->
+              </div>
+            </div>
+
+            <!-- product col right -->
+            <div class="product-col-right">
+              <div class="product-col-r-top flex">
+                <div class="product-col-content">
+                  <h2 class="small-title">Backend Software</h2>
+                  <h2 class="medium-title">.Dot Net</h2>
+                  <p class="text-light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                  <!-- <button type = "button" class = "btn-dark">Shop now</button> -->
+                </div>
+              </div>
+
+              <div class="product-col-r-bottom">
+                <!-- left -->
+                <div class="flex">
+                  <div class="product-col-content">
+                    <h2 class="small-title">summer sale</h2>
+                    <h2 class="medium-title">Extra 50% Off</h2>
+                    <p class="text-light">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    </p>
+                    <!-- <button type = "button" class = "btn-dark">Shop now</button> -->
+                  </div>
+                </div>
+                <!-- right -->
+                <div class="flex">
+                  <div class="product-col-content">
+                    <h2 class="small-title">MongoDb</h2>
+                    <h2 class="medium-title">best sellers</h2>
+                    <p class="text-light">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <!-- <button type = "button" class = "btn-dark">Shop now</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products,flex-right">
+        <div class="">
+          <h1 class="large-title">Special Products With Offers</h1>
+          <p class="text-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            quos sit consectetur, ipsa voluptatem vitae necessitatibus dicta
+            veniam, optio, possimus assumenda laudantium. Temporibus, quis cum.
+          </p>
+
+          <div class="product-items">
+            <!-- single product -->
+            <div class="product">
+              <div class="product-content">
+                <div class="product-img">
+                  <img
+                    src="https://i.ibb.co/3Rd2mww/angular-icon-logo.png"
+                    class="imageItem top-logo shake"
+                    alt="angular-icon-logo"
+                    border="0"
+                  />
+                </div>
+                <div class="product-btns">
+                  <a href="productDetails.html" type="button" class="btn-cart"
+                    >View Details
+                    <span><i class="fas fa-plus"></i></span>
+                  </a>
+                  <button type="button" class="btn-buy">
+                    buy now
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="small-title">Rating</h2>
+                  <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                </div>
+                <a href="#" class="product-name">Angular.Js</a>
+                <p class="product-price">$ 150.00</p>
+                <p class="product-price">$ 133.00</p>
+              </div>
+
+              <div class="discount-info">
+                <h2 class="small-title">25% off</h2>
+              </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class="product">
+              <div class="product-content">
+                <div class="product-img">
+                  <img
+                    src="https://i.ibb.co/mBvvtWw/javascript-39413.png"
+                    class="imageItem top-logo shake"
+                    alt="javascript-39413"
+                    border="0"
+                  />
+                </div>
+                <div class="product-btns">
+                  <a href="productDetails.html" type="button" class="btn-cart"
+                    >View Details
+                    <span><i class="fas fa-plus"></i></span>
+                  </a>
+                  <button type="button" class="btn-buy">
+                    buy now
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="small-title">Rating</h2>
+                  <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                </div>
+                <a href="#" class="product-name">JavaScript</a>
+                <p class="product-price">$ 150.00</p>
+                <p class="product-price">$ 133.00</p>
+              </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class="product">
+              <div class="product-content">
+                <div class="product-img">
+                  <img
+                    src="https://i.ibb.co/b6T6tVp/dotnet-logo.png"
+                    class="imageItem top-logo shake"
+                    alt="dotnet-logo"
+                    border="0"
+                  />
+                </div>
+                <div class="product-btns">
+                  <a href="productDetails.html" type="button" class="btn-cart"
+                    >View Details
+                    <span><i class="fas fa-plus"></i></span>
+                  </a>
+                  <button type="button" class="btn-buy">
+                    buy now
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="small-title">Rating</h2>
+                  <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                </div>
+                <a href="#" class="product-name">Backend</a>
+                <p class="product-price">$ 150.00</p>
+                <p class="product-price">$ 133.00</p>
+              </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class="product">
+              <div class="product-content">
+                <div class="product-img">
+                  <img
+                    src="https://i.ibb.co/0nBM0HM/microsoft-sql-server-logo.png"
+                    class="imageItem top-logo shake"
+                    alt="microsoft-sql-server-logo"
+                    border="0"
+                  />
+                </div>
+                <div class="product-btns">
+                  <a href="productDetails.html" type="button" class="btn-cart"
+                    >View Details
+                    <span><i class="fas fa-plus"></i></span>
+                  </a>
+                  <button type="button" class="btn-buy">
+                    buy now
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="small-title">Rating</h2>
+                  <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                </div>
+                <a href="#" class="product-name">Angular.Js</a>
+                <p class="product-price">$ 150.00</p>
+                <p class="product-price">$ 133.00</p>
+              </div>
+
+              <div class="discount-info">
+                <h2 class="small-title">50% off</h2>
+              </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class="product">
+              <div class="product-content">
+                <div class="product-img">
+                  <img class="imageItem" src="" alt="" />
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-cart">
+                    View Details
+                    <span><i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type="button" class="btn-buy">
+                    buy now
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-info-top">
+                  <h2 class="small-title">Rating</h2>
+                  <div class="rating">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                </div>
+                <a href="#" class="product-name">SQL Server</a>
+                <p class="product-price">$ 150.00</p>
+                <p class="product-price">$ 133.00</p>
+              </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class="product">
+              <div class="product-content">
+                <div class="product-img">
+                  <img class="imageItem" src="" alt="" />
+                </div>
+                <div class="product-btns">
+                  <button type="button" class="btn-cart">
+                    View Details
+                    <span><i class="fas fa-plus"></i></span>
+                  </button>
+                  <button type="button" class="btn-buy">
+                    buy now
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+              </div>
 
 
      <!-- **here below start task** -->
@@ -226,6 +517,96 @@
                  </div>
              </div>
          </div> 
+                  <!-- * JOHANS FOOTER -->
+
+    <footer>
+      <!-- *TOP FOOTER -->
+      <div class="top_footer">
+        <div class="contact_box">
+          <!--* Contact -->
+          <div class="contact_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-contact footer_h6">Contact</h6></a
+            >
+            <h6 class="footer_h6">
+              <a href="mailto:info@4xjuniors.com">Info@4xjunior.com</a><br />
+              023-123 45 <br />
+              070-123 45 67
+            </h6>
+          </div>
+          <!--* Shortcuts  -->
+          <div class="shortcut_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-shortcut footer_h6">Shortcuts</h6></a
+            >
+            <h6 class="footer_h6">
+              <a href="index.html">FAQ</a> <br>
+              <a href="index.html">About</a> <br>
+              <a href="index.html">Career</a>
+          
+            </h6>
+          </div>
+          <!--* Social Media  -->
+          <div class="social_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-social footer_h6">Follow us</h6></a
+            >
+            <h6 class="footer_h6">
+              <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> <br />
+              <a href="https://github.com/ECU-JF/HTML_CSS_projektarbete" target="_blank">Github</a> <br />
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </h6>
+          </div>
+          <!--* Office  -->
+          <div class="office_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-office footer_h6">Office</h6></a
+            >
+            <h6 class="footer_h6">
+              4xjuniors AB <br />
+              Dalavägen 123 <br />
+              791 90 Falun
+            </h6>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- *BOTTOM FOOTER -->
+      <div class="bottom_footer">
+        <div class="copyright_box">
+          <h5 class="footer_h5">&copy;2022 4XJUNIORS</h5>
+        </div>
+
+        <div class="newsletter_box">
+          <h5 class="footer_h5">Subscribe to our newsletter</h5>
+          <button type="button" class="subscribe_btn" onclick="subscribe_btn()">
+            subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- * SUBSCRIBE POPUP  -->
+    <div class="popup" id="popup-1">
+      <div class="overlay">
+        <div class="popup-content">
+          <div class="close-btn" onclick="subscribe_btn()">&times;</div>
+          <h4>Subscribe to our newsletter</h4>
+          <div class="email-input">
+            <form action="">
+              <label class="popup_label" for="email" aria-placeholder="Enter your email address"
+                >Email:</label
+              >
+              <input type="email" id="email" name="email" />
+              <input type="submit" />
+            </form>
+          </div>
+          <p>We will not spam you &#128521;</p>
+        </div>
+      </div>
+    </div>
+
 
     <script>
       window.onscroll = function () {
@@ -243,6 +624,5 @@
         }
       }
     </script>
-
   </body>
 </html>

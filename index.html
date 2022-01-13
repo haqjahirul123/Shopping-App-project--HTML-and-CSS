@@ -15,8 +15,10 @@
       content="Jon Krantz, Johan Fahlgren, Joakim Engström, Jahirul Haq"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- POPUP JS -->
+    <script src="contacts/contacts.js"></script>
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
   </head>
   <body>
     <div class="top-container">
@@ -24,7 +26,7 @@
     </div>
 
     <div class="header" id="myHeader">
-      <a href="index.html" title="Go to our Homepage">Home</a>
+      <a href="index.html" class="active_nav" title="Go to our Homepage">Home</a>
       <a href="contacts/index.html">Contacts</a>
       <a href="products/index.html">Products</a>
       <a href="about-us/index.html">About us</a>
@@ -33,6 +35,96 @@
 
     <div class="content">
       <img class="displayed" src="img/Fullstack.gif" alt="gif" />
+    </div>
+
+    <!-- * FOOTER -->
+
+    <footer>
+      <!-- *TOP FOOTER -->
+      <div class="top_footer">
+        <div class="contact_box">
+          <!--* Contact -->
+          <div class="contact_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-contact footer_h6">Contact</h6></a
+            >
+            <h6 class="footer_h6">
+              <a href="mailto:info@4xjuniors.com">Info@4xjunior.com</a><br />
+              023-123 45 <br />
+              070-123 45 67
+            </h6>
+          </div>
+          <!--* Shortcuts  -->
+          <div class="shortcut_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-shortcut footer_h6">Shortcuts</h6></a
+            >
+            <h6 class="footer_h6">
+              <a href="index.html">FAQ</a> <br>
+              <a href="index.html">About</a> <br>
+              <a href="index.html">Career</a>
+          
+            </h6>
+          </div>
+          <!--* Social Media  -->
+          <div class="social_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-social footer_h6">Follow us</h6></a
+            >
+            <h6 class="footer_h6">
+              <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> <br />
+              <a href="https://github.com/ECU-JF/HTML_CSS_projektarbete" target="_blank">Github</a> <br />
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </h6>
+          </div>
+          <!--* Office  -->
+          <div class="office_link">
+            <a href="/contacts/index.html"
+              ><h6 class="header-office footer_h6">Office</h6></a
+            >
+            <h6 class="footer_h6">
+              4xjuniors AB <br />
+              Dalavägen 123 <br />
+              791 90 Falun
+            </h6>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- *BOTTOM FOOTER -->
+      <div class="bottom_footer">
+        <div class="copyright_box">
+          <h5 class="footer_h5">&copy;2022 4XJUNIORS</h5>
+        </div>
+
+        <div class="newsletter_box">
+          <h5 class="footer_h5">Subscribe to our newsletter</h5>
+          <button type="button" class="subscribe_btn" onclick="subscribe_btn()">
+            subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- * SUBSCRIBE POPUP  -->
+    <div class="popup" id="popup-1">
+      <div class="overlay">
+        <div class="popup-content">
+          <div class="close-btn" onclick="subscribe_btn()">&times;</div>
+          <h4 class="popup_h4">Subscribe to our newsletter</h4>
+          <div class="email-input">
+            <form action="">
+              <label class="popup_label" for="email" aria-placeholder="Enter your email address"
+                >Email:</label
+              >
+              <input type="email" id="email" name="email" />
+              <input type="submit" />
+            </form>
+          </div>
+          <p>We will not spam you &#128521;</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

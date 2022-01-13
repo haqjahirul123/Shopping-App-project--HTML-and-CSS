@@ -1,10 +1,9 @@
-.body {
-  /*  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
+html,
+body {
   margin: 0;
-  min-height: 100%;
+  /* height: 100%;
+  width: 100%; */
+  background-color: #1e1842;
 }
 
 h1,
@@ -17,15 +16,6 @@ h5 {
   letter-spacing: 0px;
   line-height: 110%;
   color: #25274d;
-}
-
-.main-header {
-  display: block;
-  width: 100%;
-}
-
-.header {
-  z-index: 1;
 }
 
 .main-container {
@@ -221,6 +211,10 @@ label {
   display: grid;
 }
 
+.popup_label {
+  color: #25274d;
+}
+
 .form-control {
   color: #25274d;
 }
@@ -245,20 +239,17 @@ label {
 }
 
 /* Footer */
+/* 
 footer {
   margin: auto;
+  position: static;
+  bottom: 0px;
+  width: 100%;
 }
-
 .top_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #25274d;
   z-index: 1;
   width: 100%;
@@ -269,56 +260,72 @@ footer {
 .contact_box {
   height: 100px;
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-h6 {
+.footer_h6 {
   color: #fff;
   font-size: 0.8rem;
+  display: block;
+  margin-block-start: 0rem;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 400;
 }
 
-.contact_link a {
-  margin-left: 0px;
+.footer_h5 {
+  display: block;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 100;
 }
 
-.contact_link a:hover {
-  font-weight: normal;
+.contact_link {
+  & a {
+    margin-left: 0px;
+  }
+
+  & a:hover {
+    font-weight: normal;
+  }
 }
 
-.shortcut_link a {
-  margin-left: 0px;
+.shortcut_link {
+  & a {
+    margin-left: 0px;
+  }
+
+  & a:hover {
+    font-weight: normal;
+  }
 }
 
-.shortcut_link a:hover {
-  font-weight: normal;
+.social_link {
+  & a {
+    margin-left: 0px;
+  }
+
+  & a:hover {
+    font-weight: normal;
+  }
 }
 
-.social_link a {
-  margin-left: 0px;
-}
+.office_link {
+  & a {
+    margin-left: 0px;
+  }
 
-.social_link a:hover {
-  font-weight: normal;
-}
-
-.office_link a {
-  margin-left: 0px;
-}
-
-.office_link a:hover {
-  font-weight: normal;
+  & a:hover {
+    font-weight: normal;
+  }
 }
 
 .header-contact {
@@ -347,15 +354,9 @@ h6 {
 
 .bottom_footer {
   border-top: 3px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   clear: both;
   margin-top: 0px;
   background-color: #ff9b00;
@@ -368,41 +369,30 @@ h6 {
 .copyright_box {
   height: 50px;
   width: 370px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  justify-content: flex-start;
+  align-items: center;
 
-.copyright_box > h5-copyright {
-  font-size: 1.1rem;
-  color: #25274d;
+  & > h5-copyright {
+    font-size: 1.1rem;
+    color: #25274d;
+  }
 }
 
 .newsletter_box {
   height: 50px;
   width: 370px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   gap: 20px;
-}
 
-.newsletter_box > h5-subscribe {
-  font-size: 1.1rem;
-  color: #25274d;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  & > h5-subscribe {
+    font-size: 1.1rem;
+    color: #25274d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
 }
 
 .h5-Contact {
@@ -418,7 +408,6 @@ h6 {
   font-weight: 600;
   min-width: 10%;
   border-radius: 3px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -426,9 +415,9 @@ h6 {
   background: #ff9b00;
   border: 1px solid #fff;
   color: #fff;
-}
-
+} */
 /* SUBSCRIPTION POPUP */
+/* 
 .popup .overlay {
   position: fixed;
   top: 0px;
@@ -456,69 +445,61 @@ h6 {
 }
 
 .email-input {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   gap: 10px;
 }
 
 .popup .popup-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
   top: 50%;
   left: 50%;
   background-image: url(/contacts/img/photo-1548504773-429e84f586d2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
   width: 500px;
   height: 300px;
   z-index: 2;
   text-align: center;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
-}
 
-.popup .popup-content > h4 {
-  padding-top: 20px;
-}
+  & > h4 {
+    padding-top: 20px;
+  }
 
-.popup .popup-content > label {
-  color: #25274d;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0;
-}
+  & > label {
+    color: #25274d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
 
-.popup .popup-content > input {
-  color: #25274d;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 0;
-  border-radius: 3px;
-}
+  & > input {
+    color: #25274d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    border-radius: 3px;
+  }
 
-.popup .popup-content > p {
-  color: #25274d;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.2;
+  & > p {
+    color: #25274d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
 }
 
 .popup.active .overlay {
@@ -526,12 +507,9 @@ h6 {
 }
 
 .popup.active .popup-content {
-  -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-}
-
+  transform: translate(-50%, -50%) scale(1);
+}  */
 /* #region MOBILE/TABLET 320px -> 767px */
 @media (max-width: 767px) {
   .content {
