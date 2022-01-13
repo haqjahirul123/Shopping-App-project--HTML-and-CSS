@@ -26,11 +26,16 @@ img.displayed {
 .top-logo {
   border-radius: 6px;
   background-size: cover;
-  max-width: 30%;
+  width: 100%;
+  max-width: 350px;
 }
 
 .top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #25274d;
+
   padding: 30px;
   text-align: center;
 }
@@ -38,6 +43,7 @@ img.displayed {
 .main-header {
   display: block;
   width: 100%;
+
 }
 
 .header {
@@ -83,11 +89,13 @@ a:hover {
   text-decoration: none;
 }
 
+
 .active_nav {
   color: #ff9b00;
   font-style: italic;
   text-shadow: 2px 2px 1px black;
 }
+
 
 h3 {
   color: #f1f1f1;

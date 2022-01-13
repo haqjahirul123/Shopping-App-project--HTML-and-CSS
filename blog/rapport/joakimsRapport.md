@@ -1,16 +1,16 @@
-## <a href="https://github.com/ECU-JF/HTML_CSS_projektarbete" style="color: Grey; text-decoration: underline;text-decoration-style: dotted;">Projektarbete i HTML & CSS - Joakim</a>
+<h2> <a href="https://github.com/ECU-JF/HTML_CSS_projektarbete" style="color: Grey; text-decoration: underline;text-decoration-style: dotted;">Projektarbete i HTML & CSS - Joakim</a> </h2>
 
-### <span style="color:lightgreen"> Index </Span>
+### <span style="color:lightgreen"> Index </Span> 
 
-- [<a href="https://github.com/ECU-JF/HTML_CSS_projektarbete" style="color: Grey; text-decoration: underline;text-decoration-style: dotted;">Projektarbete i HTML & CSS - Joakim</a>](#projektarbete-i-html--css---joakim)
-  - [<span style="color:lightgreen"> Index </Span>](#-index-)
 - [`Hemsidan`:](#hemsidan)
   - [`Bootstrap`](#bootstrap)
   - [`Figma`](#figma)
+  - [`SEO`](#seo)
   - [`HTTP`](#http)
   - [`URL`](#url)
 - [`Reflektioner`](#reflektioner)
   - [`Boostrap`](#boostrap)
+  - [`Javascript`](#javascript)
 - [Links](#links)
 
 <br />
@@ -19,28 +19,15 @@
 
 ## `Hemsidan`:
 
-- Har sett till att hemsidan är responsiv (desktop+smartphone) (Mål 4)
-
-Har gjort genom kod och media query.
-
-- Det ska finnas en gemensam styling som alla sidor använder. Man kan ha unika stylings per sida utöver detta. (Mål 4 & 1)
-
-Vi har en gemensam styling med ett återkommande tema i vår egen desing.
-
 - Webbplatsen ska vara sökmotorsoptimerad (semantisk HTML mm.), och ni ska tillsammans i gruppen välja och jobba med 2 till 3 nyckelord på varje sida. (Mål 5 & 2)
 
 Har inte gjort detta ännu!
 
-- Minst en Bootstrap snippet eller komponent testat per person (Mål 8)
-
 ### `Bootstrap`
 
-Bootstrap finns med.
+Denna bootstrap har jag använt mig har, har dock inte kollat vad allt gör, men de är de som påverkar mina blog-cards och navigeringsknappar mest. 
 
-- Rapporten:
-
-  - Ha med Wireframen du använde för ditt ansvarsområde (png/bmp/jpg/pdf) (Mål 7)
-
+*https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css*
 ### `Figma`
 
 Bilden visar både en desktop och hur den ser ut på en mobil.
@@ -49,13 +36,13 @@ Bilden visar både en desktop och hur den ser ut på en mobil.
 
 - [Index](#index)
 
+  ### `SEO`
+
   - Skriv vilka nyckelord ni valde och vad du gjort för SEO på ditt ansvarsområde. (Mål 6)
 
-  Detta och sökmotorsoptimerad är ej hjord.
+  Detta och sökmotorsoptimerad är ej gjord.
 
-  - Använd bilder från Inspector verktyget och förklara i grova lag hur webläsaren använder HTTP för att besöka just din hemsida. (Mål 2)
-
-### `HTTP`
+  ### `HTTP`
 
 > HyperText Transfer Protocol
 
@@ -126,11 +113,13 @@ Sedan genom att kunna ta reda på vad en sak heter så kunde jag t ex återanvä
 
 För mig är det viktigt att det är en tydlig enkel struktur, med enkla länkar, skall kunna gå tillbaka till valfri sida från varje plats för att enkelt navigera runt.
 
-Sedan när jag väl började jobba
+Sedan när jag väl började jobba Självständigt reflektera över och kritiskt granska de valda lösningarna i projektet gällande design och wireframes, HTML, CSS, samt Bootstrap.
 
-- Självständigt reflektera över och kritiskt granska de valda lösningarna i projektet gällande design och wireframes, HTML, CSS, samt Bootstrap.
+### `Javascript`
 
-- [Index](#index)
+Detta är inget krav i denna kursen, men vissa saker som vi kanske kunnat göra i CSS som t ex sticky navbar, men det kändes kul att prova lite inför nästa kurs. Det som är script i mitt fall är navbaren och dropdown texten på mina bloginlägg. 
+
+[Index](#index)
 
 Inlämning
 
@@ -149,18 +138,11 @@ Inlämning
 
 > Täckta kursplansmål:
 >
-> 1. Beskriva och förklara delar av HTML, semantisk HTML, CSS och dess syntax
-> 2. Redogöra för hur webbläsare kommunicerar via HTTP samt URL:ers uppbyggnad
+
 > 3. Ge enklare exempel på sökmotoroptimering
-> 4. Använda aktuella CSS ramverk för layout och positionering samt Bootstrap för att skapa responsiva sidor.
+
 > 5. Tillämpa HTML-strukturer för att bättre påverka sökoptimering.
 > 6. Motivera valda lösningar för en webbsidas uppbyggnad och struktur.
-> 7. Använda och ta fram wireframes som underlag för en webbsida.
-> 8. Självständigt producera ett gränssnitt med korrekt användning av HTML och CSS, bootstraps samt wireframes
-
-G krav:
-
-Det är väldigt viktigt att alla committar tidigt och ofta. Committa varje dag du sitter och jobbar och committa så fort du löst något problem i ditt arbete. Om jag inte har commits så har jag inget betygsunderlag att godkänna på. **Commits är alltså lika viktigt som själva arbetet.** Saknas commits så får man skriva om arbetet.
 
 </reflections>
 
