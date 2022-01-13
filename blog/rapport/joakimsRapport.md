@@ -1,105 +1,125 @@
-HTML_CSS_projektarbete - Johan, Jon, Jahirul, Joakim
+<h2> <a href="https://github.com/ECU-JF/HTML_CSS_projektarbete" style="color: Grey; text-decoration: underline;text-decoration-style: dotted;">Projektarbete i HTML & CSS - Joakim</a> </h2>
 
-Delar som skall vara med. - Joakim har blog. 
+### <span style="color:lightgreen"> Index </Span> 
 
-- [Hemsidan:](#hemsidan)
-  - [Bootstrap](#bootstrap)
-  - [Figma](#figma)
-  - [HTTP](#http)
+- [`Hemsidan`:](#hemsidan)
+  - [`Bootstrap`](#bootstrap)
+  - [`Figma`](#figma)
+  - [`SEO`](#seo)
+  - [`HTTP`](#http)
+  - [`URL`](#url)
+- [`Reflektioner`](#reflektioner)
+  - [`Boostrap`](#boostrap)
+  - [`Javascript`](#javascript)
+- [Links](#links)
 
-Grupprojekt - Skapa en webbplats
+<br />
 
-> Täckta kursplansmål:
->
-> 1. Beskriva och förklara delar av HTML, semantisk HTML, CSS och dess syntax
-> 2. Redogöra för hur webbläsare kommunicerar via HTTP samt URL:ers uppbyggnad
-> 3. Ge enklare exempel på sökmotoroptimering
-> 4. Använda aktuella CSS ramverk för layout och positionering samt Bootstrap för att skapa responsiva sidor.
-> 5. Tillämpa HTML-strukturer för att bättre påverka sökoptimering.
-> 6. Motivera valda lösningar för en webbsidas uppbyggnad och struktur.
-> 7. Använda och ta fram wireframes som underlag för en webbsida.
-> 8. Självständigt producera ett gränssnitt med korrekt användning av HTML och CSS, bootstraps samt wireframes
+<webpage style="color:grey">
 
-Uppgift
+## `Hemsidan`:
 
-5. En sida som innehåller en blogg där någon skriver relevanta inlägg för företaget eller organisationen. Sidan ska innehålla en övergripande vy med minst tre blogginlägg, som är avkortade på något sätt. Det ska sedan gå att fälla ut hela blogginlägget genom att klicka. Det finns en bloggnavigering som länkar till de olika blogginläggen på sidan.
+- Webbplatsen ska vara sökmotorsoptimerad (semantisk HTML mm.), och ni ska tillsammans i gruppen välja och jobba med 2 till 3 nyckelord på varje sida. (Mål 5 & 2)
 
-Att vara ansvarig för en del betyder inte att man är den enda personen som skriver den biten utav sidan, utan man ansvarar för att den blir skriven. Alla sidor måste inte göras utan det beror på storleken på gruppen.
+Har inte gjort detta ännu!
 
-G krav:
+### `Bootstrap`
 
-Det är väldigt viktigt att alla committar tidigt och ofta. Committa varje dag du sitter och jobbar och committa så fort du löst något problem i ditt arbete. Om jag inte har commits så har jag inget betygsunderlag att godkänna på. **Commits är alltså lika viktigt som själva arbetet.** Saknas commits så får man skriva om arbetet.
+Denna bootstrap har jag använt mig har, har dock inte kollat vad allt gör, men de är de som påverkar mina blog-cards och navigeringsknappar mest. 
 
-  # Hemsidan:
+*https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css*
+### `Figma`
 
-  - Har sett till att hemsidan är responsiv (desktop+smartphone) (Mål 4)
-  
-  Har gjort genom kod och media query.
+Bilden visar både en desktop och hur den ser ut på en mobil.
 
-  - Det ska finnas en gemensam styling som alla sidor använder. Man kan ha unika stylings per sida utöver detta. (Mål 4 & 1)
+![http](Figma.png)
 
-  Vi har en gemensam styling med ett återkommande tema i vår egen desing. 
+- [Index](#index)
 
-  - Webbplatsen ska vara sökmotorsoptimerad (semantisk HTML mm.), och ni ska tillsammans i gruppen välja och jobba med 2 till 3 nyckelord på varje sida. (Mål 5 & 2)
-
-  Har inte gjort detta ännu! 
-
-  - Minst en Bootstrap snippet eller komponent testat per person (Mål 8)
-  ## Bootstrap
-
-  Bootstrap finns med.
-
-- Rapporten:
-
-  - Ha med Wireframen du använde för ditt ansvarsområde (png/bmp/jpg/pdf) (Mål 7)
-
-  ## Figma
-
-  Bilden visar både en desktop och hur den ser ut på en mobil. 
-
-  ![rapportFigma](https://user-images.githubusercontent.com/89445183/148766267-be89cdc5-d7aa-4bd6-b020-a0d5b84d0c0e.png)
+  ### `SEO`
 
   - Skriv vilka nyckelord ni valde och vad du gjort för SEO på ditt ansvarsområde. (Mål 6)
 
-  Detta och sökmotorsoptimerad är ej hjord.
+  Detta och sökmotorsoptimerad är ej gjord.
 
-  - Använd bilder från Inspector verktyget och förklara i grova lag hur webläsaren använder HTTP för att besöka just din hemsida. (Mål 2)
+  ### `HTTP`
 
-  ## HTTP
+> HyperText Transfer Protocol
 
-  Om jag använder Developer tools, väljer fliken Network och slår enter så körs sidan om och vi får lite information. Se bild. 
+![http](http.png)
 
-   ![http](https://user-images.githubusercontent.com/89445183/148769324-76e0049b-7396-4ac2-a94a-4b63508c59c9.png)
+I bilden ovan beskrivs ett flöde av information som hämtas, dessa adresser är http som innehåller iformation. Detta sker upprepade gånger enligt listan under namn. Varje moment går på några få millisekunder.
 
-  I bilden ovan beskrivs ett flöde av information som hämtas, dessa adresser är http (HyperText Transfer Protocol) som innehåller iformation. Detta sker upprepade gånger enligt listan under namn. Varje moment går på några få millisekunder. 
+Den hade börjat på index.html och här finns information till sidan om vad den skall göra sedan, vad som skall begäras in.
 
-  Den hade börjat på index.html och här finns information till sidan om vad den skall göra sedan, vad som skall begäras in. 
+Varje bit som hämtas använder sig av metoden GET. Om detta går som de skall så får vi tillbaka en statuskod 200. Detta betyder att vår begäran fungerat som den skall.
+Detta upprepas då på allt som just denna sidan innehåller, och i mitt fall hade nästa steg varit boostrap.min.css.
 
-  Varje bit som hämtas använder sig av metoden GET. Om detta går som de skall så får vi tillbaka en statuskod 200. Detta betyder att vår begäran fungerat som den skall. 
-  Detta upprepas då på allt som just denna sidan innehåller, och i mitt fall hade nästa steg varit boostrap.min.css. 
+Information som kan finnas på en index sida i sin head kan beskriva t ex om vi behöver hämta en link för en bild, css, js osv.
 
-  Information som kan finnas på en index sida i sin head kan beskriva t ex om vi behöver hämta en link för en bild, css, js osv. 
+- [Index](#index)
 
-  
+### `URL`
 
+> Uniform Resource Locator
 
+![URL](URL.png)
 
+När vi går genomm in bild så ser vi att URL innehåller olika delar. Så skall försöka förklar dem bit för bit. Kommer använda följaden för att förklara lite.
 
+_https://www.games-workshop.com/en-SE/The-Dark-Lord-Sauron_
 
-  - Förklara varför just den URL som används i HTTP anropet ovan används. _(Använd ord som: schema/protokoll, auktoritet/server/domän, sökväg/resurs)_ (Mål 2)
+**`Scheme/Protocol`**
 
-  - Självständigt reflektera över och kritiskt granska de valda lösningarna i projektet gällande design och wireframes, HTML, CSS, samt Bootstrap.
+Detta är vad som beskriver vad det är för typ av adress. HTTP är den vanligaste tillsammans med HTTPS, den senare används när det krävs mer säkerhet. Detta döljs ofta i webläsaren för att undvika lite text och göra det lättare för användaren.
 
-VG krav:
+**`Domain Name`**
 
-- Hemsidan:
-  - Använt flera bootstrap components/snippets och även customizat styling, inom eget ansvarsområde (Mål 8)
+Sedan har vi **www.games-workshop.com** är då domännamnet, detta beskriver ofta vilket företag eller person som driver sidan.
 
-Varning om copy-paste
+**www** är en subdomain som också den döljs på sidor då det är den absolut vanligaste. Men det kan också finnas t ex accounts.xyz.com där den första biten då måste inkluderas och tar dig troligen till en användarsida. Slutet har vi **.com** som i detta fallet är en top-domän.
 
-Om jag ser copypaste kod som är nästintil oförändrad så kan jag inte godkänna om studenten har tagit till sig hur koden fungerar. Efter copypaste så måste man forma om HTML och CSS koden så att den passar in i hemsidan och sen committa.
+**`Port`**
 
-Tänk på att fråga innan ni hämtar kod av varandra i en projektgrupp med. Passa på om att fråga hur koden fungerar och hur du ska tänka när du får den att fungera i din hemsida.
+Porten används som en identifiering över vilken typ av service/applicering serverna använder. Porten är inte nödvändig och hoppas över om webservern anväder sig av standard portarna för HTTP(80) och HTTPS(443).
+
+**`Path to file`**
+
+En typ av hiearkisk struktur som beskriver vart en resurs är lokaliserat på servern. den beskriver för servern vart denne resurs finns och vad den heter.
+
+**`Parameter`**
+
+Denna delen pekar din browser till en specifik del av sidan. Just nu har inte min adress något som börjar med ? Men vi har i alla fall en del som pekar på att ta oss till den Svenska versionen av sidan.
+
+**`Anchor`**
+
+Sista delen pekar på en specifik sak på den Svenska sidan, som kanske vill visa ett speciellt plag i en sida full av tröjor.
+
+- [Index](#index)
+
+</webpage>
+
+<reflections style="color:pink">
+
+## `Reflektioner`
+
+Detta är en otroligt svår bit denna gången. Var så många nya saker och något vi gjorde tidigt var att ge oss en generös tidsplan med mycket luft innan vår deadline. Vi valde att göra en skiss lite snabbt på en gemensam header och nav-bar samt något utkasst på färger så vi sedan kunde jobba både på egen hand och tillsammans.
+
+Jag började sedan googla runt lite för att titta på olika desings för bloggar, jag tittade på olika boostrap paket och valde i slutet en som jag tycker om. Att sedan använda mig av developertool var otroligt lärorikt. att gå in i det som autogenererats och kolla på vad olika delar heter, att sedan kunna manipulera dessa i CSS. Att kunna lägga min egen desing ovanpå en befintlig boostrap, att styla den efter vårt gemensamma men också mitt eget.
+
+Sedan genom att kunna ta reda på vad en sak heter så kunde jag t ex återanvända dessa funktioner och desinger i mina länkar som klickar mig vidare bland bloggar.
+
+### `Boostrap`
+
+För mig är det viktigt att det är en tydlig enkel struktur, med enkla länkar, skall kunna gå tillbaka till valfri sida från varje plats för att enkelt navigera runt.
+
+Sedan när jag väl började jobba Självständigt reflektera över och kritiskt granska de valda lösningarna i projektet gällande design och wireframes, HTML, CSS, samt Bootstrap.
+
+### `Javascript`
+
+Detta är inget krav i denna kursen, men vissa saker som vi kanske kunnat göra i CSS som t ex sticky navbar, men det kändes kul att prova lite inför nästa kurs. Det som är script i mitt fall är navbaren och dropdown texten på mina bloginlägg. 
+
+[Index](#index)
 
 Inlämning
 
@@ -115,3 +135,21 @@ Inlämning
 4. Skicka in på PingPong Rapport:
    - Varje person lämnar in sin egna rapport (pdf, eller zip med md och tillhörande bildlänkar)
    - Länkar till rapporten på GitHub
+
+> Täckta kursplansmål:
+>
+
+> 3. Ge enklare exempel på sökmotoroptimering
+
+> 5. Tillämpa HTML-strukturer för att bättre påverka sökoptimering.
+> 6. Motivera valda lösningar för en webbsidas uppbyggnad och struktur.
+
+</reflections>
+
+## Links
+
+https://github.com/ECU-JF/HTML_CSS_projektarbete - Git Projektet
+
+https://github.com/ECU-JF/HTML_CSS_projektarbete/tree/master/blog - Min del
+
+https://github.com/ECU-JF/HTML_CSS_projektarbete/blob/master/blog/rapport/joakimsRapport.md - Denna rapporten på git

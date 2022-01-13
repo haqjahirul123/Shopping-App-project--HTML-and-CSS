@@ -1,6 +1,17 @@
+html {
+  height: 100%;
+}
+
 body {
+  position: relative;
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 200px;
+  min-height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  overflow: auto;
+
   background-color: #1e1842;
 }
 
@@ -10,27 +21,33 @@ img.displayed {
   min-width: 300px;
   margin: auto;
   margin-top: 50px;
-
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .top-logo {
-  /* box-shadow: 0 0 20px 10px #f1f1f1; */
   border-radius: 6px;
   background-size: cover;
-  max-width: 30%;
+  width: 100%;
+  max-width: 350px;
 }
 
 .top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #25274d;
-  /* background-color: #709e97be; */
+
   padding: 30px;
   text-align: center;
-  /* background-image: linear-gradient(to right, #394e4bbe, #42887dbe); */
+}
+
+.main-header {
+  display: block;
+  width: 100%;
+
 }
 
 .header {
+  z-index: 1;
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: #555;
@@ -64,15 +81,21 @@ a {
   text-decoration: none;
   color: #f1f1f1;
   margin-left: 12px;
+  text-shadow: 2px 2px 1px black;
 }
 
 a:hover {
   color: #ff9b00;
-  font-weight: bold;
   text-decoration: none;
 }
 
-/*TODO - lägg till att activ nav är markerad med färg*/
+
+.active_nav {
+  color: #ff9b00;
+  font-style: italic;
+  text-shadow: 2px 2px 1px black;
+}
+
 
 h3 {
   color: #f1f1f1;
@@ -80,4 +103,429 @@ h3 {
 
 p {
   color: #f1f1f1;
+}
+
+/* JOHAN FOOTER CSS */
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.top_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #25274d;
+  z-index: 1;
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+
+.contact_box {
+  height: 100px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer_h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  margin-block-start: 0rem;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 400;
+  text-shadow: 0px 0px 0px #ff9b00;
+}
+
+.footer_h6 > a {
+  text-shadow: 0px 0px 0px #ff9b00;
+}
+
+.footer_h5 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0px;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 100;
+}
+
+.popup_h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0px;
+  line-height: 110%;
+  color: #25274d;
+}
+
+.popup_label {
+  color: #25274d;
+}
+
+.contact_link a {
+  margin-left: 0px;
+}
+
+.contact_link a:hover {
+  font-weight: normal;
+}
+
+.shortcut_link a {
+  margin-left: 0px;
+}
+
+.shortcut_link a:hover {
+  font-weight: normal;
+}
+
+.social_link a {
+  margin-left: 0px;
+}
+
+.social_link a:hover {
+  font-weight: normal;
+}
+
+.office_link a {
+  margin-left: 0px;
+}
+
+.office_link a:hover {
+  font-weight: normal;
+}
+
+.header-contact {
+  color: #ff9b00;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header-shortcut {
+  color: #ff9b00;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header-social {
+  color: #ff9b00;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header-office {
+  color: #ff9b00;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.bottom_footer {
+  border-top: 3px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  clear: both;
+  margin-top: 0px;
+  background-color: #ff9b00;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+}
+
+.copyright_box {
+  height: 50px;
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.copyright_box > h5-copyright {
+  font-size: 1.1rem;
+  color: #25274d;
+}
+
+.newsletter_box {
+  height: 50px;
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.newsletter_box > h5-subscribe {
+  font-size: 1.1rem;
+  color: #25274d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.h5-Contact {
+  font-size: 1.2rem;
+  color: #25274d;
+}
+
+.subscribe_btn {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ff9b00;
+  color: #ff9b00;
+  font-weight: 600;
+  min-width: 10%;
+  border-radius: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.subscribe_btn:hover {
+  background: #ff9b00;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* JOHANS SUBSCRIPTION POPUP */
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.email-input {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.popup .popup-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-image: url(/contacts/img/photo-1548504773-429e84f586d2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 300px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.popup .popup-content > h4 {
+  padding-top: 20px;
+}
+
+.popup .popup-content > label {
+  color: #25274d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.popup .popup-content > input {
+  color: #25274d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  border-radius: 3px;
+}
+
+.popup .popup-content > p {
+  color: #25274d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .popup-content {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* JOHANS #region MOBILE/TABLET 320px -> 767px */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 320px;
+  }
+
+  .footer_h5 {
+    font-size: 16px;
+  }
+  .popup .popup-content {
+    width: 320px;
+    height: 300px;
+  }
+  .email-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  p {
+    padding: 16px 0px;
+    margin: 0;
+  }
+  .top_footer {
+    height: 220px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .top_footer > .contact_box {
+    height: 200px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .top_footer > .contact_box > .contact_link {
+    width: 110px;
+  }
+  .top_footer > .contact_box > .shortcut_link {
+    width: 110px;
+  }
+  .top_footer > .contact_box > .social_link {
+    width: 110px;
+  }
+  .top_footer > .contact_box > .office_link {
+    width: 110px;
+  }
+  .bottom_footer {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    gap: 5px;
+    margin-top: 0px;
+  }
+  .bottom_footer > .copyright_box {
+    width: 130px;
+    margin-left: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .bottom_footer > .copyright_box > .h5-copyright {
+    font-size: 1.1rem;
+  }
+  .bottom_footer > .newsletter_box {
+    gap: 0;
+    padding: 0;
+    margin-right: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .bottom_footer > .newsletter_box > .footer_h5 {
+    width: 110px;
+    font-size: 1.1rem;
+  }
 }
