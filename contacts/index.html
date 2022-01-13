@@ -43,7 +43,6 @@
           class="top-logo"
           src="../img/logo/logo_johan.png"
           alt="logo"
-          width="350px"
         />
       </div>
     </header>
@@ -51,7 +50,7 @@
     <nav>
       <div class="header" id="myHeader">
         <a href="../index.html">Home</a>
-        <a href="index.html">Contacts</a>
+        <a href="index.html" class="active_nav">Contacts</a>
         <a href="../products/index.html">Products</a>
         <a href="../about-us/index.html">About us</a>
         <a href="../blog/index.html">Blog</a>
@@ -267,9 +266,9 @@
           <!--* Contact -->
           <div class="contact_link">
             <a href="/contacts/index.html"
-              ><h6 class="header-contact">Contact</h6></a
+              ><h6 class="header-contact footer_h6">Contact</h6></a
             >
-            <h6>
+            <h6 class="footer_h6">
               <a href="mailto:info@4xjuniors.com">Info@4xjunior.com</a><br />
               023-123 45 <br />
               070-123 45 67
@@ -278,22 +277,21 @@
           <!--* Shortcuts  -->
           <div class="shortcut_link">
             <a href="/contacts/index.html"
-              ><h6 class="header-shortcut">Shortcuts</h6></a
+              ><h6 class="header-shortcut footer_h6">Shortcuts</h6></a
             >
-            <h6>
+            <h6 class="footer_h6">
               <a href="index.html">FAQ</a> <br>
               <a href="index.html">About</a> <br>
-              <a href="index.html">Available positions
-              </a>
+              <a href="index.html">Career</a>
           
             </h6>
           </div>
           <!--* Social Media  -->
           <div class="social_link">
             <a href="/contacts/index.html"
-              ><h6 class="header-social">Follow us</h6></a
+              ><h6 class="header-social footer_h6">Follow us</h6></a
             >
-            <h6>
+            <h6 class="footer_h6">
               <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> <br />
               <a href="https://github.com/ECU-JF/HTML_CSS_projektarbete" target="_blank">Github</a> <br />
               <a href="https://www.instagram.com/" target="_blank">Instagram</a>
@@ -302,9 +300,9 @@
           <!--* Office  -->
           <div class="office_link">
             <a href="/contacts/index.html"
-              ><h6 class="header-office">Office</h6></a
+              ><h6 class="header-office footer_h6">Office</h6></a
             >
-            <h6>
+            <h6 class="footer_h6">
               4xjuniors AB <br />
               Dalavägen 123 <br />
               791 90 Falun
@@ -317,11 +315,11 @@
       <!-- *BOTTOM FOOTER -->
       <div class="bottom_footer">
         <div class="copyright_box">
-          <h5 class="h5-copyright">&copy;2022 4XJUNIORS</h5>
+          <h5 class="footer_h5">&copy;2022 4XJUNIORS</h5>
         </div>
 
         <div class="newsletter_box">
-          <h5 class="h5-footer">Subscribe to our newsletter</h5>
+          <h5 class="footer_h5">Subscribe to our newsletter</h5>
           <button type="button" class="subscribe_btn" onclick="subscribe_btn()">
             subscribe
           </button>
@@ -337,7 +335,7 @@
           <h4>Subscribe to our newsletter</h4>
           <div class="email-input">
             <form action="">
-              <label for="email" aria-placeholder="Enter your email address"
+              <label class="popup_label" for="email" aria-placeholder="Enter your email address"
                 >Email:</label
               >
               <input type="email" id="email" name="email" />
