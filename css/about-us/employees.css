@@ -7,6 +7,10 @@ p {
   text-align: justify;
 }
 
+.card-img-overlay {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #000000;
+}
+
 h1 {
   font-size: xx-large;
   color: rgb(209, 72, 17);
@@ -54,10 +58,7 @@ article {
 .aside img {
   max-width: 70%;
   max-height: 200px;
-}
-
-.top-container img {
-  box-shadow: 0 0 20px 10px #f1f1f1;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #000000;
 }
 
 /* grid Start */
