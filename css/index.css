@@ -10,24 +10,20 @@ img.displayed {
   min-width: 300px;
   margin: auto;
   margin-top: 50px;
-
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .top-logo {
-  /* box-shadow: 0 0 20px 10px #f1f1f1; */
   border-radius: 6px;
   background-size: cover;
-  max-width: 30%;
+  width: 100%;
+  max-width: 350px;
 }
 
 .top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #25274d;
-  /* background-color: #709e97be; */
-  padding: 30px;
-  text-align: center;
-  /* background-image: linear-gradient(to right, #394e4bbe, #42887dbe); */
 }
 
 .header {
@@ -71,8 +67,6 @@ a:hover {
   font-weight: bold;
   text-decoration: none;
 }
-
-/*TODO - lägg till att activ nav är markerad med färg*/
 
 h3 {
   color: #f1f1f1;
