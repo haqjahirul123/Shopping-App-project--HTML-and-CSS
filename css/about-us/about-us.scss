@@ -1,3 +1,7 @@
+p {
+  hyphens: auto;
+}
+
 #myHeader {
   /* ändrar texten i Navbar */
   z-index: 1;
@@ -8,10 +12,6 @@
 #myHeader a:hover {
   /* ändrar texten i Navbar */
   text-decoration: none;
-}
-
-.top-container img {
-  box-shadow: 0 0 20px 10px #f1f1f1;
 }
 
 /* Start bootstrap*/
