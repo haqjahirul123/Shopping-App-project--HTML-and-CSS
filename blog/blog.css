@@ -265,7 +265,7 @@ a.btn-card {
   }
 }
 
-@media (max-width: 352px) {
+@media (max-width: 370px) {
   .blog-heading .btn-card:nth-child(2) {
     order: 1;
   }
