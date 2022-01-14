@@ -19,6 +19,7 @@
   - [`Bootstrap`](#bootstrap-1)
   - [`Javascript`](#javascript)
   - [`Motiveringar`](#motiveringar)
+  - [`Design`](#design)
 - [Links](#links)
 
 ---
@@ -117,13 +118,15 @@ Vi valde att göra en skiss lite snabbt på en gemensam header och nav-bar samt 
 
 Jag började sedan googla runt lite för att titta på olika designs för bloggar, jag tittade på olika boostrap paket och valde i slutet en som jag tycker om. Att sedan använda mig av developertool var otroligt lärorikt. att gå in i det som autogenererats och kolla på vad olika delar heter, att sedan kunna manipulera dessa i CSS. Att kunna lägga min egen design ovanpå en befintlig boostrap, att styla den efter vårt gemensamma men också mitt eget.
 
-Sedan genom att kunna ta reda på vad en sak heter så kunde jag t ex återanvända dessa funktioner och designer i mina länkar som klickar mig vidare bland bloggar.
+Att kunna ta reda på vad en sak heter så kunde jag t ex återanvända dessa funktioner och designer i mina länkar som klickar mig vidare bland bloggar.
 
 ---
 
 ### `Bootstrap`
 
 För mig är det viktigt att det är en tydlig enkel struktur, med enkla länkar, skall kunna gå tillbaka till valfri sida från varje plats för att enkelt navigera runt.
+
+Så även om boostrapen jag använde i första hand var för mina blogg-kort. så tog jag dess knappar igen till att navigera mellan inläggen.
 
 Sedan när jag väl började jobba Självständigt reflektera över och kritiskt granska de valda lösningarna i projektet gällande design och wireframes, HTML, CSS, samt Bootstrap.
 
@@ -133,9 +136,11 @@ Sedan när jag väl började jobba Självständigt reflektera över och kritiskt
 
 Detta är inget krav i denna kursen, men vissa saker som vi kanske kunnat göra i CSS som t ex sticky navbar, men det kändes kul att prova lite inför nästa kurs. Det som är script i mitt fall är navbaren och dropdown texten på mina blogginlägg.
 
+---
+
 ### `Motiveringar`
 
-Väldigt mycket av mina personliga motiveringar till varför vi har t ex en ganska simpel men tydlig navbar. 
+Väldigt mycket av mina personliga motiveringar till varför vi har t ex en ganska simpel men tydlig navbar är att idag upplever jag många sidor vara lite för plottriga med en massa häftiga effekter som nu går att göra. Denna är stilren och enkel, tdylig.
 
 ![Nav](Nav.png)
 
@@ -143,9 +148,11 @@ Rätt sent satt jag med Johan och snackade lite om design och frågade om vi kun
 
 ---
 
+### `Design`
+
 Sedan kände jag att vi tidigt hittade lite färger att jobba runt, när vi då fick till den så har jag försökt återanvända denna här och där för att få det att kännas sammanhängande. Både min blogcontent och mina blog cards t ex fick samma orange border samt ett lite vitt glow runt för att kännas mjukt och ändå höra ihop. 
 
-![Desgin](design.png)
+![Design](design.png)
 
 Länge hade jag vitt runt blogg men valde att köra på detta. Så kort och gott är det i mitt fall mest små ändringar här och där, prova olika funktioner. Efter att jag till sist fått det med att få min bild att funka i samma container som texten och att den wraps runt den så började jag jobba mer med media querys. 
 
