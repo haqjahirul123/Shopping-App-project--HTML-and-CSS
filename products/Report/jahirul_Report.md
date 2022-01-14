@@ -13,6 +13,7 @@ HTTP is a protocol for fetching resources such as HTML documents. It is the foun
 By using the browser's built-in tool Developer tools and navigating to the Network tab, we can see the entire process that takes place by entering the website's URL (http://127.0.0.1:5501/products/index.html) 
 
 Firsy we need request a GET index.html, then we get the answer 200 OK that is responses. Its  means that the resource has been downloaded and read by a browser.The browser reads through the index.html file and sees that there is code that wants to download more objects to the browser, such as links to external services, other files in the project such as CSS, JS and images. All this happens in a couple of hundred milliseconds in this case 
+
 <img width="80%" src="Image/http.png">
 
  <br />
