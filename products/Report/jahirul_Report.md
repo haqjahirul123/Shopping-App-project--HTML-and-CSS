@@ -1,5 +1,5 @@
 ## **Summary**
-We have made our website  that  is responsive  with desktop  and smartphone. We have done these  through html,css, bootstrap javaScriptcode(not everyone) and media query.We have common styling that all sides use. Also every page has unique stylings that has done each developer.We have a common styling with a recurring theme in our own desing.  We use At least one Bootstrap snippet or component tested per person The website has search engine optimized (semantic HTML etc.), and we must together in the group choose and work with 2 to 3 keywords on each page.
+We have made our website  that  is responsive  with desktop  and smartphone. We have done these  through html,css, bootstrap javaScriptcode and media query.We have common styling that all sides use. Also every page has unique stylings that has done each developer.We have a common styling with a recurring theme in our own desing.  We use At least one Bootstrap snippet or component tested per person The website has search engine optimized (semantic HTML etc.), and we must together in the group choose and work with 2 to 3 keywords on each page.
 ## **Wireframe** -(Product and productDetails page)
 I used Figma to creating a wireframe sketch with all the elements to visualize what the finished product would look like for both desktop and mobile. Also i sketched individiul component of both Product and productDetails pages. Image is geiven below:
 <img width="80%" src="Image/ProductPage.jpg">
@@ -28,7 +28,7 @@ my URL: http://127.0.0.1:5501/products/index.html where  127.0.0.1 is Local IP a
 
 # **Scheme**
 The first part of the URL is the scheme, which indicates the protocol that the browser must use to request the resouce (a protocol is a set method for exchanging or transferring data around a computer network). Usually for websites the protocol is HTTPS or HTTP (its unsecured version). Addressing web pages requires one of these two, but browsers also know how to handle other schemes such as mailto: (to open a mail client), so don't be surprised if you see other protocols.
-My Hypertext Transfer Protocol which is one of the most common protocols for web pages. Some other common protocols used by applications are HTTPS, FTP, IMAP, DNS, SMTP, TLS / SSL. Wiki
+My Hypertext Transfer Protocol which is one of the most common protocols for web pages. Some other common protocols used by applications are HTTPS, FTP, IMAP, DNS, SMTP, TLS / SSL.
 
 <img width="80%" src="Image/schema.png">
 
@@ -59,7 +59,7 @@ The main benefit we go from  CSS is that style is applied consistently across a 
 
 We faced a problem With CSS, what works with one browser may not always work with another. We suppose to do test for compatibility, running the program across multiple browsers before a website is set live but we dont. Because this bug was visible in very few cases.
 
-Recently, Bootstrap gained much popularity as the number one Front-end framework among web developers. Bootstrap helps us to creating mobile-friendly websites.But someimes we were confused because  everything built with Bootstrap will have very similar looks. Thats in some cases we override and modify style sheets manually
+Recently, Bootstrap gained much popularity as the number one Front-end framework among web developers. Bootstrap helps us to creating mobile-friendly websites.But someimes we were confused because  everything built with Bootstrap will have very similar looks. Thats in some cases we override and modify style sheets manually.
 
-After Intregrating all ours codes , we've got all our pages and defined how they display to the site visitor, so it's time to make sure it all works
+After Intregrating all ours codes , we've got all our pages and defined how they display to the site visitor, so it's time to make sure it all works.
 
